@@ -1,0 +1,140 @@
+
+/* I had some white space on the right side of the so I added the below css to make it work*/
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+/* THe ID for the Page Container*/
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+/* This line removes the blue color from the a link tags*/
+a { color: inherit; } 
+
+/* Normal Font Size of the Footer*/
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;            /* Footer height */
+    font-size: 16px;
+}
+
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+  
+
+
+
+/* Layout of the upper Footer*/
+.upper_footer{
+    left: 5%;
+    width: 100%;
+
+   
+    background-color: #E4E4C5;
+}
+/* The text for the first row to make it more bolder*/
+.row-text1{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+
+
+
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+}
+/*Lower Footer*/
+.lower_footer{
+    height: 5%;
+    padding-top: 1.5%;
+    background-color:  #6F693A;
+   
+   display: absolute;
+    color: white;
+    
+}
+/* Making the lower footer more center as per the design*/
+#footer_text{
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right:5%;
+    
+}
+/* This is a single column in the bootsrap row so I hade to move it to the left*/
+.returns{
+    left: 25.1%;
+}
+
+/* This is the CSS for the Yellow border which surrounds the upper part of the Footer*/
+.rectangle{
+    
+    padding-top: 2%;
+    border: 1px solid #F6EC20;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    padding-right: 5%;
+}
+
+/* I used CSS Grid for the Layout of the lower footer*/
+.lower-inline{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+/* The layout of the text for the lower footer*/
+.rights-reserved{    
+   padding-left: 15%;
+  font-size: 0.5em;
+  padding-top: 2%;
+  letter-spacing: 2px;
+  
+}
+
+/* The layout for the Bank Card Icons*/
+.bank-images{
+  padding-left: 50%;
+  font-size: 2em;
+  padding-bottom: 2%;
+}
+
+
+/* Media Screen to lower text size for responsivnes*/
+
+  @media screen and (max-width: 600px) {
+ 
+
+  
+
+    #footer{
+        font-size: 0.5em;
+    }
+    .row-text1{
+        
+        font-style: normal;
+        font-weight: bold;
+    
+    
+    
+        letter-spacing: 0.75px;
+        text-transform: uppercase;
+    }
+
+ 
+  }
+ 
+
+
+ 
