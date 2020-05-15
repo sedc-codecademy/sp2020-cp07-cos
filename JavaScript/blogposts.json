@@ -1,0 +1,38 @@
+{
+    "posts": [
+      {
+        "id": "waxing Instructions",
+        "date": "May 2, 2020",
+        "title": "How To Wax",
+        "blogImage":"blogImage1.jpg",
+        "blogThumbnail":"blogthumbnail1.jpg",
+        "paragraphs":["paragraph1,paragraph2,paragraph3"],
+        "tutorialVideos":["video1,video2,video3"],
+        "otherImages":["image1.jpg","image2.jpg","image3.jpg"]
+
+      },
+      {
+        "id": "Waxing",
+        "date": "April 26, 2020",
+        "title": "Waxing during the Pandemic",
+        "blogImage":"blogImage1.jpg",
+        "blogThumbnail":"blogthumbnail1.jpg",
+        "paragraphs":["paragraph1,paragraph2,paragraph3"],
+        "tutorialVideos":["video1,video2,video3"],
+        "otherImages":["image1.jpg","image2.jpg","image3.jpg"]
+      },
+      {
+        "id": "Natural Products",
+        "date": "April 21, 2020",
+        "title": "The Benefits of Using Natural Products",
+        "blogImage":"blogImage1.jpg",
+        "blogThumbnail":"blogthumbnail1.jpg",
+        "paragraphs":["paragraph1,paragraph2,paragraph3"],
+        "tutorialVideos":["video1,video2,video3"],
+        "otherImages":["image1.jpg","image2.jpg","image3.jpg"]
+
+      }
+      
+     
+    ]
+  }
