@@ -112,6 +112,7 @@ a { color: inherit; }
 
 
 
+
 /* Media Screen to lower text size for responsivnes*/
 
 
@@ -126,6 +127,7 @@ a { color: inherit; }
 
     #footer_text{
       text-align: center;
+      font-size: 0.75rem;
     }
 
     .returns{
