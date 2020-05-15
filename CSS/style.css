@@ -8,6 +8,7 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    font-family: 'Raleway', sans-serif;
 }
 
 /* THe ID for the Page Container*/
@@ -45,7 +46,6 @@ a { color: inherit; }
 }
 /* The text for the first row to make it more bolder*/
 .row-text1{
-    font-family: Raleway;
     font-style: normal;
     font-weight: bold;
 
@@ -113,28 +113,27 @@ a { color: inherit; }
 
 /* Media Screen to lower text size for responsivnes*/
 
-  @media screen and (max-width: 600px) {
+
+  @media screen and (max-width: 540px) {
  
-
-  
-
-    #footer{
-        font-size: 0.5em;
+    .bank-images{
+     
+      font-size: 1em;
+      padding-bottom: 2%;
     }
-    .row-text1{
-        
-        font-style: normal;
-        font-weight: bold;
     
-    
-    
-        letter-spacing: 0.75px;
-        text-transform: uppercase;
+
+    #footer_text{
+      text-align: center;
     }
 
+    .returns{
+      left: 0%;
+  }
+    
  
   }
  
 
 
- 
+
