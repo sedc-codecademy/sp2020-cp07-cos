@@ -20,13 +20,7 @@ html,body
 a { color: inherit; } 
 
 /* Normal Font Size of the Footer*/
-#footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2rem;            /* Footer height */
-    font-size: 16px;
-}
+
 
   
   #content-wrap {
@@ -45,15 +39,7 @@ a { color: inherit; }
     background-color: #E4E4C5;
 }
 /* The text for the first row to make it more bolder*/
-.row-text1{
-    font-style: normal;
-    font-weight: bold;
 
-
-
-    letter-spacing: 0.75px;
-    text-transform: uppercase;
-}
 /*Lower Footer*/
 .lower_footer{
     height: 5%;
@@ -73,9 +59,7 @@ a { color: inherit; }
     
 }
 /* This is a single column in the bootsrap row so I hade to move it to the left*/
-.returns{
-    left: 25.1%;
-}
+
 
 /* This is the CSS for the Yellow border which surrounds the upper part of the Footer*/
 .rectangle{
@@ -110,7 +94,26 @@ a { color: inherit; }
   padding-bottom: 2%;
 }
 
+* {
+  box-sizing: border-box;
+}
 
+/* Create four equal columns that floats next to each other */
+.column {
+  float: center;
+  width: 25%;
+  
+}
+
+/* Clear floats after the columns */
+
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 
 
 /* Media Screen to lower text size for responsivnes*/
@@ -130,9 +133,7 @@ a { color: inherit; }
       font-size: 0.75rem;
     }
 
-    .returns{
-      left: 0%;
-  }
+    
     
  
   }
