@@ -1,0 +1,126 @@
+{
+   "openapi": "3.0.0",
+   "info": {
+     "version": "1.0.0",
+     "title": "Products Inventory",
+     "license": {
+       "name": "MIT"
+     }
+   },
+   "servers": [
+     {
+       "url": "http://petstore.swagger.io/v1"
+     }
+   ],
+   "paths": {
+     "/user": {
+       "get": {
+         "summary": "Details about  product",
+         "operationId": "listproduct",
+         "tags": [
+           "products"
+         ],
+         "parameters": [
+           {
+             "name": "products",
+             "in": "query",
+             "description": "Store Products",
+             "required": true,
+             "schema": {
+               "type": "string",
+               "format": "string"
+             }
+           }
+         ],
+         "responses": {
+           "200": {
+             "description": "Details about a product",
+             "headers": {
+               "x-next": {
+                 "description": "A link to the next product",
+                 "schema": {
+                   "type": "string"
+                 }
+               }
+             },
+             "content": {
+               "application/json": {
+                 "schema": {
+                   "$ref": "#/components/schemas/store"
+                 }
+               }
+             }
+           },
+           "default": {
+             "description": "unexpected error",
+             "content": {
+               "application/json": {
+                 "schema": {
+                   "$ref": "#/components/schemas/Error"
+                 }
+               }
+             }
+           }
+         }
+       }
+     }
+   },
+   "components": {
+     "schemas": {
+       "Product": {
+         "type": "object",
+         "required": [
+           "id",
+           "name",
+           "price",
+           "availabiity",
+           "image",
+           "thumbnail"
+         ],
+         "properties": {
+           "id": {
+             "type": "integer",
+             "format": "int64"
+           },
+           "name": {
+             "type": "string"
+           },
+           "tag": {
+             "type": "string"
+           },
+           "image":{
+              "type":"string"
+              },
+           "thumbnail":{
+               "type":"string"
+               
+          },
+          "availability":{
+              "type":"boolean"
+          },
+          "price":{
+              "type":"double"
+          },
+          
+         
+         }
+       },
+       "Error": {
+         "type": "object",
+         "required": [
+           "code",
+           "message"
+         ],
+         "properties": {
+           "code": {
+             "type": "integer",
+             "format": "int32"
+           },
+           "message": {
+             "type": "string"
+           }
+         }
+       }
+     }
+   }
+ }

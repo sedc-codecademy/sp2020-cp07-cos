@@ -1,38 +1,128 @@
 {
-    "posts": [
-      {
-        "id": "waxing Instructions",
-        "date": "May 2, 2020",
-        "title": "How To Wax",
-        "blogImage":"blogImage1.jpg",
-        "blogThumbnail":"blogthumbnail1.jpg",
-        "paragraphs":["paragraph1,paragraph2,paragraph3"],
-        "tutorialVideos":["video1,video2,video3"],
-        "otherImages":["image1.jpg","image2.jpg","image3.jpg"]
-
-      },
-      {
-        "id": "Waxing",
-        "date": "April 26, 2020",
-        "title": "Waxing during the Pandemic",
-        "blogImage":"blogImage1.jpg",
-        "blogThumbnail":"blogthumbnail1.jpg",
-        "paragraphs":["paragraph1,paragraph2,paragraph3"],
-        "tutorialVideos":["video1,video2,video3"],
-        "otherImages":["image1.jpg","image2.jpg","image3.jpg"]
-      },
-      {
-        "id": "Natural Products",
-        "date": "April 21, 2020",
-        "title": "The Benefits of Using Natural Products",
-        "blogImage":"blogImage1.jpg",
-        "blogThumbnail":"blogthumbnail1.jpg",
-        "paragraphs":["paragraph1,paragraph2,paragraph3"],
-        "tutorialVideos":["video1,video2,video3"],
-        "otherImages":["image1.jpg","image2.jpg","image3.jpg"]
-
+  "openapi": "3.0.0",
+  "info": {
+      "version": "1.0",
+      "title": "blogpost",
+      "license": {
+          "name": "MIT"
       }
-      
-     
-    ]
+  },
+  "servers": [
+      {
+          "url": "http://petstore.swagger.io/v1"
+      }
+  ],
+  "paths": {
+      "/user": {
+          "get": {
+              "summary": "Details about post",
+              "operationId": "listBlogPost",
+              "tags": [
+                  "post"
+              ],
+              "parameters": [
+                  {
+                      "name": "id",
+                      "in": "query",
+                      "description": "ID of the post",
+                      "required": true,
+                      "schema": {
+                          "type": "integer",
+                          "format": "int32"
+                      }
+                  }
+              ],
+              "responses": {
+                  "200": {
+                      "description": "Details about a post",
+                      "headers": {
+                          "x-next": {
+                              "description": "A link to the next page of the post",
+                              "schema": {
+                                  "type": "string"
+                              }
+                          }
+                      },
+                      "content": {
+                          "application/json": {
+                              "schema": {
+                                  "$ref": "#/components/schemas/post"
+                              }
+                          }
+                      }
+                  },
+                  "default": {
+                      "description": "unexpected error",
+                      "content": {
+                          "application/json": {
+                              "schema": {
+                                  "$ref": "#/components/schemas/Error"
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  },
+  "components": {
+      "schemas": {
+          "User": {
+              "type": "object",
+              "required": [
+                  "id",
+                  "date",
+                  "title",
+                  "blogImage",
+                  "blogThumbnail",
+                  "paragraphs",
+                  "tutorialVideos",
+                  "otherImages"
+              ],
+              "properties": {
+                  "id": {
+                      "type": "integer",
+                      "format": "int64"
+                  },
+                  "date": {
+                      "type": "string"
+                  },
+                  "title": {
+                      "type": "string"
+                  },
+                  "blogImage": {
+                      "type": "string"
+                  },
+                  "blogThumbnail": {
+                      "type": "string"
+                  },
+                  "paragraphs": {
+                      "type": "string"
+                  },
+                  "tutorialVideos": {
+                      "type": "string"
+                  },
+                  "otherImages": {
+                      "type": "string"
+                  }
+              }
+          },
+          "Error": {
+              "type": "object",
+              "required": [
+                  "code",
+                  "message"
+              ],
+              "properties": {
+                  "code": {
+                      "type": "integer",
+                      "format": "int32"
+                  },
+                  "message": {
+                      "type": "string"
+                  }
+              }
+          }
+      }
   }
+}
