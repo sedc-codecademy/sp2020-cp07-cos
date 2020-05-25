@@ -1,44 +1,19 @@
 
-/* I had some white space on the right side of the so I added the below css to make it work*/
-
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-    font-family: 'Raleway', sans-serif;
+/* Making the Footer Text Black */
+#footer a {
+  color:inherit;
+  
 }
-
-/* THe ID for the Page Container*/
-#page-container {
-    position: relative;
-    min-height: 100vh;
-  }
-/* This line removes the blue color from the a link tags*/
-a { color: inherit; } 
-
-/* Normal Font Size of the Footer*/
-
-
-  
-  #content-wrap {
-    padding-bottom: 2.5rem;    /* Footer height */
-  }
-  
 
 
 
 /* Layout of the upper Footer*/
 .upper_footer{
-    left: 5%;
-    width: 100%;
-
    
-    background-color: #E4E4C5;
+  background-color: #E4E4C5;
+
 }
-/* The text for the first row to make it more bolder*/
+
 
 /*Lower Footer*/
 .lower_footer{
@@ -58,7 +33,6 @@ a { color: inherit; }
     padding-right:5%;
     
 }
-/* This is a single column in the bootsrap row so I hade to move it to the left*/
 
 
 /* This is the CSS for the Yellow border which surrounds the upper part of the Footer*/
@@ -94,9 +68,7 @@ a { color: inherit; }
   padding-bottom: 2%;
 }
 
-* {
-  box-sizing: border-box;
-}
+
 
 /* Create four equal columns that floats next to each other */
 .column {
@@ -105,7 +77,7 @@ a { color: inherit; }
   
 }
 
-/* Clear floats after the columns */
+
 
 
 /* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
@@ -119,7 +91,15 @@ a { color: inherit; }
 /* Media Screen to lower text size for responsivnes*/
 
 
-  @media screen and (max-width: 540px) {
+@media screen and (max-width: 850px){
+
+  #footer_text{
+
+    font-size: 0.75rem;
+  }
+}
+
+  @media screen and (max-width: 600px) {
  
     .bank-images{
      
