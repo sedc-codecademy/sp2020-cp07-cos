@@ -1,0 +1,99 @@
+body
+{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+}
+
+
+/*Container & Container's Elements*/
+
+.cotent-box {
+    position: center;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: #f9f9f9;
+    float: left;
+    margin: 20px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px white;
+    transition: 2s;
+}
+
+
+/*Context*/
+#Position-Product-Cards {
+    margin: 0 8%;
+}
+img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #f9f9f9;
+    box-shadow: none;
+    transition: 1.5s;
+    filter: none;
+}
+.cotent-box:hover, img 
+{
+    position: relative;
+    transition: 2s;
+    cursor: pointer;
+}
+.cotent-box:hover
+{
+    box-shadow: 3px 12px 12px lightslategray;
+    transition:0.01s;
+}
+.cotent-box:hover img
+{
+    position: relative;
+    transform:scale(1.1);
+    filter:blur(1.8px);
+}
+.text-on-product
+{
+    font-size: 20px;
+    position: absolute;
+    font-family: Merienda;
+    color: yellow;
+    bottom: 45%;
+    left: 30%;
+    opacity: 0;
+}
+.cotent-box:hover .text-on-product
+{
+    opacity:1;
+    transition:0.5s;
+}
+
+
+
+/*Add to cart*/
+.BuyBtn 
+{
+    position: absolute;
+    width: 55%;
+    height: 10%;
+    left: 20%;
+    bottom: 30%;
+    border: 2px solid #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    border-color: #eeef00;
+    font-family: "Lucida Console", Courier, monospace;
+    color: dimgrey;
+    text-align: center;
+    opacity: 0;
+}
+.cotent-box:hover .BuyBtn 
+{
+    opacity: 1.5;
+    transition: 1.2s;
+}
+.BuyBtn:hover
+{
+    background-color:yellow;
+}
