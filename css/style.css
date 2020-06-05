@@ -35,7 +35,7 @@
 }
 
 
-/* This is the CSS for the Yellow border which surrounds the upper part of the Footer*/
+/* This is the css for the Yellow border which surrounds the upper part of the Footer*/
 .rectangle{
     
     padding-top: 2%;
@@ -46,7 +46,7 @@
     padding-right: 5%;
 }
 
-/* I used CSS Grid for the Layout of the lower footer*/
+/* I used css Grid for the Layout of the lower footer*/
 .lower-inline{
     display: grid;
     grid-template-columns: auto auto;
