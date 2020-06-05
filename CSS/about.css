@@ -1,0 +1,223 @@
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+/* fonts settings */
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: #333;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  color: #333;
+}
+
+/* padding to make more space between images and titles */
+.title-row, .history-row, .history-text, .process-row, .head-title {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.history-title, .process-title {
+  align-self: center;
+  padding-top: 3%;
+  z-index: 1;
+}
+
+/* putting titles in the centre*/
+.head-title, .partners-title {
+  text-align: center;
+}
+
+.partners-title {
+  padding-top: 10%;
+  padding-left: 20%;
+}
+
+.history-text, .process-text {
+  text-align: justify;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+/* moving vector to the right corner*/
+#yellowFlower {
+  float: right;
+}
+
+.flower-cont {
+  float: right;
+}
+
+/* making images to fit div */
+#processImg, #historyImg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* rectangle for Our partners section*/
+.rectangle {
+  padding: 0px;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: rgba(228, 228, 197, 0.87);
+  border: 1px solid #F6EC20;
+}
+
+/* logos inside Our Partners*/
+figure {
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+figure>i {
+  font-size: 96px;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+ul li {
+  float: left;
+  padding-top: 50px;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+ul li:last-child {
+  margin-right: 0;
+}
+
+/* media queries for resizing fonts, moving title to the centre on different resolutions
+and resolving yellow flower image in the right corner */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .history-title, .process-title {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .process-title {
+    order: 2;
+  }
+
+  ul {
+    display: block;
+  }
+
+  ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+  figure>i {
+    font-size: 56px;
+  }
+
+  figure {
+    padding-top: 15px;
+  }
+
+  .partners-title {
+    padding-left: 0;
+  }
+
+  .flower-cont {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .history-title, .process-title {
+    text-align: center;
+  }
+
+  .process-title {
+    order: 2;
+  }
+
+  .partners-title {
+    padding-left: 0;
+  }
+
+  .flower-cont {
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 72px;
+  }
+
+  h2 {
+    font-size: 64px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .partners-title {
+    padding-left: 20%;
+  }
+
+  .flower-cont {
+    display: contents;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .history-title, .process-title {
+    text-align: none;
+  }
+
+  .process-title {
+    order: 1;
+  }
+
+  .process-img {
+    order: 2;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
