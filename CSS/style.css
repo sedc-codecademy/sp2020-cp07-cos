@@ -1,0 +1,123 @@
+
+/* Making the Footer Text Black */
+#footer a {
+  color:inherit;
+  
+}
+
+
+
+/* Layout of the upper Footer*/
+.upper_footer{
+   
+  background-color: #E4E4C5;
+
+}
+
+
+/*Lower Footer*/
+.lower_footer{
+    height: 5%;
+    padding-top: 1.5%;
+    background-color:  #6F693A;
+   
+   display: absolute;
+    color: white;
+    
+}
+/* Making the lower footer more center as per the design*/
+#footer_text{
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right:5%;
+    
+}
+
+
+/* This is the CSS for the Yellow border which surrounds the upper part of the Footer*/
+.rectangle{
+    
+    padding-top: 2%;
+    border: 1px solid #F6EC20;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    padding-right: 5%;
+}
+
+/* I used CSS Grid for the Layout of the lower footer*/
+.lower-inline{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+/* The layout of the text for the lower footer*/
+.rights-reserved{    
+   padding-left: 15%;
+  font-size: 0.5em;
+  padding-top: 2%;
+  letter-spacing: 2px;
+  
+}
+
+/* The layout for the Bank Card Icons*/
+.bank-images{
+  padding-left: 50%;
+  font-size: 2em;
+  padding-bottom: 2%;
+}
+
+
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: center;
+  width: 25%;
+  
+}
+
+
+
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+/* Media Screen to lower text size for responsivnes*/
+
+
+@media screen and (max-width: 850px){
+
+  #footer_text{
+
+    font-size: 0.75rem;
+  }
+}
+
+  @media screen and (max-width: 600px) {
+ 
+    .bank-images{
+     
+      font-size: 1em;
+      padding-bottom: 2%;
+    }
+    
+
+    #footer_text{
+      text-align: center;
+      font-size: 0.75rem;
+    }
+
+    
+    
+ 
+  }
+ 
+
+
+
