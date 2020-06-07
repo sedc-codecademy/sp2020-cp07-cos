@@ -7,7 +7,7 @@
 
 
 /*CONTAINER FOR PICTURE-PRODUCT & SMALL-INFO*/
-.Picture-Small-Info
+.picture-small-info
 {
     display:flex;
     align-items:center;
@@ -30,33 +30,31 @@
 
 
 /*SMALL-INFO ELEMENTS*/
-.Small-Info
+.small-info
 {
     margin-left:5%;
     width:50%;
 }
-.Small-Info > h2
+.small-info > h2
 {
     font-size:270%;
     margin-top:8%;
     margin-bottom:6%;
     color:#333333;
 }
-.Small-Info > p
+.small-info > p
 {
     color:#959494;
     font-size:120%;
-    margin-bottom:15%;
+    margin-bottom:8%;
     font-family: Raleway;
 }
-#Popust
+#popust
 {
-    position: absolute;
+    position: relative;
     display:block;
-    left:55%;
-    top:58%;
-    width: 4%;
-    height: 4%;
+    width: 12%;
+    height: 12%;
     border: 2px solid #FFFFFF;
     background-color: yellow;
     border-color: #eeef00;
@@ -64,7 +62,7 @@
     text-align: center;
     color:black;
 }
-#Price
+#price
 {
     color:#959494;
     font-size:165%;
@@ -74,7 +72,7 @@
 
 
 /*ADD TO CART*/
-.BuyBtn {
+.buy-btn {
     position: absolute;
     width: 20%;
     height: 8%;
@@ -86,14 +84,15 @@
     background-color: none;
     transition: 1s;
 }
-.BuyBtn > p
+.buy-btn > p
 {
     color: dimgrey;
     text-align:center;
     text-transform: uppercase;
     font-family: "Lucida Console", Courier, monospace;
 }
-.BuyBtn:hover {
+.buy-btn:hover,.buy-btn:focus {
+    text-decoration:none;
     background-color: yellow;
     transition:1s;
 }
@@ -102,18 +101,18 @@
 
 
 /*FULL DESCRIPTION*/
-.Full-Info
+.full-info
 {
     margin:15% 5%;
 }
-.Full-Info > hr
+.full-info > hr
 {
     border: 0;
     height: 1px;
     background: #333;
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
-.Full-Info > p
+.full-info > p
 {
     font-size:100%;
     font-family: Raleway;
@@ -122,7 +121,7 @@
     letter-spacing: 0.05em;
     color: #211F1F;
 }
-.Full-Info > h2
+.full-info > h2
 {
     color:#333333;
 }
@@ -131,7 +130,7 @@
 
 
 /*SIMILAR PRODUCTS ELEMENTS*/
-.Heading-Similar-Products > h2 
+.heading-similar-products > h2 
 {
     text-align: left;
     padding-left:10%;
@@ -162,33 +161,35 @@
         font-weight: bold;
     }
 
-        .hi-slide .hi-next:hover,
-        .hi-slide .hi-prev:hover {
+        .hi-slide .hi-next:hover, hi-next:focus
+        .hi-slide .hi-prev:hover,hi-prev:focus {
             opacity: 1;
             background-color: #fff;
         }
 
     .hi-slide .hi-prev {
-        left: -60px;
+        left: -4%;
     }
 
         .hi-slide .hi-prev::before {
             content: '<';
+            position:static;
         }
 
     .hi-slide .hi-next {
-        right: -60px;
+        right: -4%;
     }
 
         .hi-slide .hi-next::before {
             content: '>';
+            position: static;
         }
 
     .hi-slide > ul {
         list-style: none;
         position: relative;
-        width: 754px;
-        height: 292px;
+        width: 70%;
+        height: 40%;
         margin: 0;
         padding: 0;
     }
@@ -198,7 +199,7 @@
             overflow: hidden;
             position: absolute;
             z-index: 0;
-            left: 377px;
+            left: 35%;
             top: 146px;
             width: 0;
             height: 0;
@@ -219,7 +220,7 @@
 
 
 /*SEE MORE Btn*/
-.See-More
+.see-more
 {
     position: absolute;
     left:40%;
@@ -234,15 +235,78 @@
     transition: 1s;
     margin-bottom:20%;
 }
-.See-More > p
+.see-more > p
 {
     color: dimgrey;
     text-align:center;
     text-transform: uppercase;
     font-family: "Lucida Console", Courier, monospace;
 }
-.See-More:hover
+.see-more:hover
 {
+    text-decoration:none;
     background-color: yellow;
     transition:1s;
+}
+
+@media all and (min-width:450px)
+{
+    #popust 
+    {
+        position: relative;
+        width: 25%;
+        height: 8%;
+    }
+    .hi-slide
+    {
+        width:-750px !important;
+    }
+    .hi-slide > ul > li
+    {
+        left: 0%;
+        width: 35% !important;
+    }
+    .hi-slide > ul > li > img
+    {
+        width: 50%;
+        height:50%;
+    }
+    .hi-slide .hi-prev
+    {
+        left:30%;
+        top:350px;
+    }
+    .hi-slide .hi-next
+    {
+        left:50%;
+        top:350px;
+    }
+}
+
+@media all and (max-width:1920px)
+{
+    #popust 
+    {
+        position:relative;
+        width: 67px;
+        height: 29px;
+    }
+    .hi-slide > ul > li
+    {
+        left: 35%;
+        width: 0;
+    }
+    .hi-slide > ul > li > img
+    {
+        width: 100%;
+        height: 100%;
+    }
+    .hi-slide .hi-prev
+    {
+        left: -4%;
+    }
+    .hi-slide .hi-next
+    {
+        right: -4%;
+    }
 }

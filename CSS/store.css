@@ -1,19 +1,19 @@
-body
+body 
 {
-    margin:0;
-    padding:0;
-    font-family:sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 
 
 /*Container & Container's Elements*/
 
 .cotent-box {
-    position: center;
+    position:center;
+    display:inline-block;
     width: calc(400px - 30px);
     height: calc(300px - 30px);
     background: #f9f9f9;
-    float: left;
     margin: 20px;
     box-sizing: border-box;
     border-radius: 3px;
@@ -23,7 +23,7 @@ body
 
 
 /*Context*/
-#Position-Product-Cards {
+#position-product-cards {
     margin: 0 8%;
 }
 img {
@@ -41,12 +41,12 @@ img {
     transition: 2s;
     cursor: pointer;
 }
-.cotent-box:hover
+.cotent-box:focus, .cotent-box:hover
 {
     box-shadow: 3px 12px 12px lightslategray;
     transition:0.01s;
 }
-.cotent-box:hover img
+.cotent-box:focus img, .cotent-box:hover img
 {
     position: relative;
     transform:scale(1.1);
@@ -54,30 +54,23 @@ img {
 }
 .text-on-product
 {
+    position:relative;
+    left:18%;
+    display:block;
     font-size: 20px;
-    position: absolute;
     font-family: Merienda;
     color: yellow;
-    bottom: 45%;
-    left: 30%;
-    opacity: 0;
-}
-.cotent-box:hover .text-on-product
-{
-    opacity:1;
-    transition:0.5s;
 }
 
 
 
 /*Add to cart*/
-.BuyBtn 
+#buy-btn1 
 {
-    position: absolute;
-    width: 55%;
-    height: 10%;
-    left: 20%;
-    bottom: 30%;
+    position:relative;
+    width:40%;
+    height:15%;
+    left:20%;
     border: 2px solid #FFFFFF;
     text-decoration: none;
     text-transform: uppercase;
@@ -86,14 +79,12 @@ img {
     font-family: "Lucida Console", Courier, monospace;
     color: dimgrey;
     text-align: center;
-    opacity: 0;
+    transition:0.5s;
 }
-.cotent-box:hover .BuyBtn 
+#buy-btn1:focus,#buy-btn1:hover
 {
-    opacity: 1.5;
-    transition: 1.2s;
+    transition:1s;
+    background-color:#FFF957;
+    text-decoration:none;
 }
-.BuyBtn:hover
-{
-    background-color:yellow;
-}
+
