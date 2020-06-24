@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bee Wax</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets\Style\Single-Product-Page.css" />
+</head>
+<body onload="hideloader()">
+
+    <nav>
+        <!-- NAV BAR HERE -->
+    </nav>
+
+
+
+
+    <header>
+        <div class="Picture-Small-Info">
+            <div class="picture-product">
+                <img src="Assets\Imgs\Product-Example.png" />
+            </div>
+
+
+            <div class="Small-Info">
+                <h2>Bee Wax</h2>
+                <p>Ingredients: Rosin, pine resin, bee resin, herbal ointment, boric oil, castor etc…</p>
+                <p id="Popust">-30%</p>
+                <p id="Price">32 &#8364;</p>
+                <a href="#" class="BuyBtn"><p>ADD TO CART</p></a>
+            </div>
+        </div>
+
+
+        <div class="Full-Info">
+            <h2>INSTRUCTION FOR USE | ADITIONAL INFORMATION</h2>
+            <hr />
+            <p>
+                Heat the wax in the tin container till it reaches body temperature. Use the piece of wood provided in the box to put the wax on your skin. Put it in the hair growing direction and take it off the opposite direction . Do not put it on the parts covered with pimples .!!!!
+                <br /><br />
+                Put a small amount of the depilatory and then wait 24 hours. If there is not any allergic reaction use the wax products.
+                <br /><br />
+                We strongly recommend you to use one of our supplementary tonics to cool down your skin.
+            </p>
+        </div>
+
+
+        <div class="Heading-Similar-Products">
+            <h2>SIMILAR PRODUCTS</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner col-10 mx-auto">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-3  col-6 grey-background"><a id="link-similar-products" href="#"><img src="Assets/Imgs/product3.png" class="d-block w-100" alt="product image"><p id="text-similar-products">Product-01</p></a></div>
+                                    <div class="col-md-3  col-6 grey-background"><a id="link-similar-products" href="#"><img src="Assets/Imgs/product3.png" class="d-block w-100" alt="product image"><p id="text-similar-products">Product-02</p></a></div>
+                                    <div class="col-md-3  col-6 grey-background"><a id="link-similar-products" href="#"><img src="Assets/Imgs/product3.png" class="d-block w-100" alt="product image"><p id="text-similar-products">Product-03</p></a></div>
+                                    <div class="col-md-3  col-6 grey-background"><a id="link-similar-products" href="#"><img src="Assets/Imgs/product3.png" class="d-block w-100" alt="product image"><p id="text-similar-products">Product-04</p></a></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3  col-6 grey-background"><a id="link-similar-products" href="#"><img src="Assets/Imgs/product3.png" class="d-block w-100" alt="product image"><p id="text-similar-products">Product-05</p></a></div>
+                                    <div class="col-md-3  col-6 grey-background"><a id="link-similar-products" href="#"><img src="Assets/Imgs/product3.png" class="d-block w-100" alt="product image"><p id="text-similar-products">Product-06</p></a></div>
+                                    <div class="col-md-3  col-6 grey-background"><a id="link-similar-products" href="#"><img src="Assets/Imgs/product3.png" class="d-block w-100" alt="product image"><p id="text-similar-products">Product-07</p></a></div>
+                                    <div class="col-md-3  col-6 grey-background"><a id="link-similar-products" href="#"><img src="Assets/Imgs/product3.png" class="d-block w-100" alt="product image"><p id="text-similar-products">Product-08</p></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br /><br />
+        <button class="btn-similar-products">Show More</button>
+    </header>
+
+
+
+    <footer>
+        <!-- FOOTER HERE -->
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="Assets\JS\Script.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="Assets\JS\jquery.hislide.js"></script>
+    <script>
+        $('.slide').hiSlide();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>
