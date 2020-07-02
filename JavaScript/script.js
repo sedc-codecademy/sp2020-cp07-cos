@@ -472,3 +472,60 @@ cartNavLink.addEventListener(`click`,function(){
 
 	output.innerHTML=""
 })
+
+var x = window.matchMedia("(max-width: 776px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+
+function myFunction(x) {
+
+let mobileprices = document.getElementById("klasaepergjithshme")
+
+	if (x.matches) { // If media query matches
+	  mobileprices.innerHTML=` 
+	 <div class="row"> 
+	  <div class=" klasaere"></div> 
+	  <!-- <div class=""> -->
+		 <div class="">
+			 <p class="klasaere">Price: </p>
+			 <p class="klasaere">Shipping</p> 
+			 <p class="klasaere">Total </p>
+			 <button class="order-btn ">ORDER</button>
+		 </div>
+		 <div class="">
+			 <p class="klasaere">0</p>
+			 <p class="klasaere">0</p>
+			 <p class="klasaere">0</p>
+			 
+		 </div>
+		 </div>`
+	} else {
+		mobileprices.innerHTML=`<div class="container">
+		<div id="klasaepergjithshme" class="row" >
+			 <div class="col-lg-8 col-sm-4"></div> 
+			 <!-- <div class="col-lg-4 order-checkout"> -->
+				<div class="col-lg-2">
+					<p class="total-price ">Price: </p>
+					<p class="shipping-price ">Shipping</p> 
+					<p class="total-cost ">Total </p>
+					<button class="order-btn ">ORDER</button>
+				</div>
+				<div class="col-lg-2">
+					<p class="total-product-value">0</p>
+					<p class="total-product-value test-value">0</p>
+					<p class="total-product-value">0</p>
+					
+				</div>
+
+
+
+				
+			
+			
+			
+		 </div>
+		</div>
+	</div>`
+	}
+  }
+

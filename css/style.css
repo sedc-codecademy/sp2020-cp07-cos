@@ -1218,4 +1218,140 @@ padding:20px 0;
 .shopping-cart-product-image{
   width: 100%;
   height:auto;
+
+}
+
+.product-name{
+  font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+/* identical to box height, or 29px */
+
+letter-spacing: 0.05em;
+
+color: #211F1F;
+}
+
+.quantity-option{
+margin-top:20px;
+  padding:10px 20px ;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  vertical-align: center;
+  margin-left: 35px;
+}
+
+.cart-column-general{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  vertical-align: center !important;
+}
+.cart-price{
+  padding-top:30px;
+}
+
+.quantity-cart{
+  font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+/* identical to box height, or 29px */
+
+letter-spacing: 0.05em;
+
+color: #211F1F;
+}
+
+.shopping-cart-general{
+
+  border-bottom: solid 1px black;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.order-checkout {
+  padding-top: 30px;
+}
+
+.shipping-price {
+  border-bottom: solid 1px black;
+}
+
+.order-btn {
+  padding: 15px 50px;
+  border-color:  yellow;
+  background-color: rgba(255, 255, 0, 0);
+}
+
+.total-product-value {
+  padding-left:0;
+  align-items: baseline;
+}
+
+.test-value {
+  border-bottom: solid 1px black;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+
+.klasaere {
+  align-items: center;
+}
+
+@media screen and (max-width: 776px) {
+  
+  .cart-column-general{
+    display: block;
+    text-align: center;
+    align-items: center;
+    
+  }
+  .quantity-option{
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    margin-left: -10px;
+    
+  }
+  .quantity-cart {
+    display: block;
+    text-align: center;
+    align-items: center;
+  }
+
+  .quantity-mobile{
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .shopping-cart-general {
+    display: flexbox;
+    text-align: center;
+    align-items: center;
+    
+  }
+
+  .second-cart-row > p {
+    text-align: center;
+    margin-right: 5px;
+  }
+
+  .order-checkout {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+  }
+  .shipping-price {
+    padding-bottom: 20px;
+  }
+
+  .classare {
+    display: grid!important;
+  }
 }

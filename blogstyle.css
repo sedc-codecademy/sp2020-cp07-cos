@@ -26,3 +26,30 @@
   padding: 20px 0 200px;
   align-items: center;
 }
+
+
+.pagination {
+  display: block !important;
+  text-align: center;
+  align-items: center;
+  float: center;
+  padding: 20px 0;
+}
+
+.pagination a {
+  color: black;
+  float: center;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
