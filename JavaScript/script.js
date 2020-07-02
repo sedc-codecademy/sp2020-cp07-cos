@@ -234,7 +234,7 @@ function showStore(link){
         let output=document.getElementById("output")
 
         output.innerHTML=`<div id="store">
-		<div class="row ">
+		<div class="row">
 			<div class="col-md-4 align-extra-store">
 				<img class="image-extra" src="img/product.png" alt="">
 				<button class="addtoCart">Add To Cart</button>

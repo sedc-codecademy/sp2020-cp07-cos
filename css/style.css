@@ -898,17 +898,19 @@ and resolving yellow flower image in the right corner */
 
 .hero-btn {
   border: 1px solid rgba(246, 235, 33, 1);
-  background-color: transparent;
   font-family: 'Raleway', sans-serif;
   color: rgba(111, 105, 58, 0.82);
   font-size: 18px;
   padding-top: 1%;
   border-radius: 0;
+  
 }
 
-.hero-btn:hover{
 
+
+.hero-btn:hover{
   
+ 
 }
 
 .sale-baner {
@@ -1197,4 +1199,23 @@ and resolving yellow flower image in the right corner */
   .hp-product-img2 {
     order: 2;
   }
+}
+
+
+/* Cart CSS*/
+
+.shopping-cart-header{
+
+font-family: Playfair Display;
+font-style: normal;
+font-weight: normal;
+font-size: 50px;
+line-height: 67px;
+text-align: center;
+padding:20px 0;
+}
+
+.shopping-cart-product-image{
+  width: 100%;
+  height:auto;
 }
