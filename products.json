@@ -1,0 +1,20 @@
+{
+   "products": [
+       {
+         "id": 0,
+         "articleNumber": 0,
+         "image": "",
+         "price": 0,
+         "shippingPrice": 0,
+         "discount": 0,
+         "name": "",
+         "colorVarieties": [""],
+         "shortDescription": "",
+         "longDescription": "",
+         "similarProducts": [1]
+       }
+     ],
+     "numberOfProducts": 1   
+
+   }
+ 

@@ -61,15 +61,13 @@
         return this;
     }
 })(jQuery);
+;
 
+var value=0
 
-
-
-
-
-
+//Targeting Nav Element in JS
 let aboutUsNav=document.getElementById("about")
-
+//Creating a function to show the About Us Section with one parameter
 function showAboutUs(link){
     link.addEventListener(`click`,function(){
     let output=document.getElementById("output")
@@ -215,12 +213,14 @@ function showAboutUs(link){
 `
 })
 }
-
+//Calling the function for the Navigation bar Link
 showAboutUs(aboutUsNav)
 let aboutFooter=document.getElementById("aboutFooter")
+//Calling the function to show the About us when clicked on the About us from foooter
+
 showAboutUs(aboutFooter)
 let home=document.getElementById("home")
-
+//Just creating this now until we can implement the HomePage
 home.addEventListener(`click`,function(){
     let output=document.getElementById("output")
 
@@ -228,7 +228,7 @@ home.addEventListener(`click`,function(){
 })
 
 let store=document.getElementById("store")
-
+//Creating a function with one parameter to show the Store
 function showStore(link){
     link.addEventListener(`click`,function(){
         let output=document.getElementById("output")
@@ -237,41 +237,67 @@ function showStore(link){
 		<div class="row ">
 			<div class="col-md-4 align-extra-store">
 				<img class="image-extra" src="img/product.png" alt="">
-				<a id="text-on-product" href="#" >Bee Wax <br> &nbsp;&nbsp; 100g</a>
 				<button class="addtoCart">Add To Cart</button>
 			</div>
 			<div class="col-md-4 align-extra-store">
 				<img class="image-extra" src="img/product.png" alt="">
-				<a id="text-on-product" href="#" >Butter Wax <br> &nbsp;&nbsp; 100g</a>
 				<button class="addtoCart">Add To Cart</button>
 			</div>
 			<div class="col-md-4 align-extra-store ">
 				<img class="image-extra" src="img/product.png" alt="">
-				<a id="text-on-product" href="#" >Wax <br> &nbsp;&nbsp; 1kg</a>
 				<button class="addtoCart">Add To Cart</button>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-4 align-extra-store">
 				<img class="image-extra" src="img/product.png" alt="">
-				<a id="text-on-product" href="#" >Bee Wax <br> &nbsp;&nbsp; 35g</a>
 				<button class="addtoCart">Add To Cart</button>
 			</div>
 			<div class="col-md-4 align-extra-store">
 				<img class="image-extra " src="img/product.png" alt="">
-				<a id="text-on-product" href="#">Cold Wax Strips <br> &nbsp;&nbsp; 100g</a>
 				<button class="addtoCart">Add To Cart</button>
 			</div>
 			<div class="col-md-4 align-extra-store">
-				<img id="insertVector" class="image-extra background-image-vector" src="img/product.png" alt="">	
-				<a id="text-on-product" href="#">Roll on Wax <br> &nbsp;&nbsp; 100g</a>
+				<img id="insertVector" class="image-extra background-image-vector" src="img/product.png" alt="">
+				<button class="addtoCart">Add To Cart</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 align-extra-store">
+				<img class="image-extra" src="img/product.png" alt="">
+				<button class="addtoCart">Add To Cart</button>
+			</div>
+			<div class="col-md-4 align-extra-store">
+				<img class="image-extra" src="img/product.png" alt="">
+				<button class="addtoCart">Add To Cart</button>
+			</div>
+			<div class="col-md-4 align-extra-store">
+				<img class="image-extra" src="img/product.png" alt="">
 				<button class="addtoCart">Add To Cart</button>
 			</div>
 		</div>
 	</div>
         
 	`
+
+	//Making the Counter go Up with each click on add to Cart.
+		let addtoCartbtn=document.getElementsByClassName("addtoCart")
+
+
+		for(let i=0;i<addtoCartbtn.length;i++){
+		addtoCartbtn[i].addEventListener(`click`,function(){
+			let addtoCartNumber=document.getElementById("cart-products")
+
+			value++
+
+			addtoCartNumber.innerText=value
+			alert("Product Added to Cart")
+
+			addtoCartNumber.style.color="red"
+			addtoCartNumber.style.fontSize="1.2em"
+		})}
 	
+	//Ading the flower with JS.
 	let backgroundIMG=document.getElementById("insertVector");
 
 		
@@ -281,9 +307,9 @@ function showStore(link){
 		backgroundIMG.style.backgroundSize="contain";
 	let clickImages=document.getElementsByClassName("image-extra")
 
-	console.log(clickImages)
 	
-		for (let i = 0; i < clickImages.length; i++){
+	//Making a loop so that we can add the event listener for each elemept in order to take us to the one Product page. This function will change when we will have to make an Ajax Call.
+		for(let i=0;i<clickImages.length;i++){
 
 			clickImages[i].addEventListener(`click`,function(){
 
@@ -297,8 +323,8 @@ function showStore(link){
 					<h2>Bee Wax</h2>
 					<p>Ingredients: Rosin, pine resin, bee resin, herbal ointment, boric oil, castor etc…</p>
 					<p id="Popust">-30%</p>
-					<p id="Price"><strike>32 Ден.;</strike>22 Ден.</p>
-					<a href="#" class="BuyBtn"><p>ADD TO CART</p></a>
+					<p id="Price">32 &#8364;</p>
+					<a href="#" id="addtoCartSingePage" class="BuyBtn"><p>ADD TO CART</p></a>
 				</div>
 			</div>
 	
@@ -355,6 +381,21 @@ function showStore(link){
 			</div>
 			<br /><br />
 			<button class="btn-similar-products">Show More</button>`
+
+			//Incrementing the Products number in the CartElement in Singe Product Page
+			var addtoCartbtnSinglePage=document.getElementById("addtoCartSingePage")
+			
+			addtoCartbtnSinglePage.addEventListener(`click`,function(){
+					let addtoCartNumber=document.getElementById("cart-products")
+		
+					value++
+		
+					addtoCartNumber.innerText=value
+					alert("Product Added to Cart")
+		
+					addtoCartNumber.style.color="red"
+					addtoCartNumber.style.fontSize="1.2em"
+				})
 			})
 
 		}
@@ -366,12 +407,12 @@ function showStore(link){
 }
 
 let storeFooter=document.getElementById("store-footer")
-
+//Showing the Store, and the storeFooter
 showStore(store)
 showStore(storeFooter)
 
 let contactUs=document.getElementById("contact")
-
+//Making a function with one parameter to show the Contact section
 function showContact(link){
 
 	link.addEventListener(`click`,function(){
@@ -418,7 +459,16 @@ function showContact(link){
 
 
 let contactFooter=document.getElementById("contact-footer")
-
+//Caling the functions to show the Contact Us
 showContact(contactFooter)
 showContact(contactUs)
 
+let cartNavLink=document.getElementById("open-cart")
+
+
+cartNavLink.addEventListener(`click`,function(){
+
+	let output=document.getElementById("output")
+
+	output.innerHTML=""
+})
