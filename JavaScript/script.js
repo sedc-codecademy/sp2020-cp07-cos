@@ -237,49 +237,40 @@ function showStore(link){
 		<div class="row ">
 			<div class="col-md-4 align-extra-store">
 				<img class="image-extra" src="img/product.png" alt="">
+				<a id="text-on-product" href="#" >Bee Wax <br> &nbsp;&nbsp; 100g</a>
 				<button class="addtoCart">Add To Cart</button>
 			</div>
 			<div class="col-md-4 align-extra-store">
 				<img class="image-extra" src="img/product.png" alt="">
+				<a id="text-on-product" href="#" >Butter Wax <br> &nbsp;&nbsp; 100g</a>
 				<button class="addtoCart">Add To Cart</button>
 			</div>
 			<div class="col-md-4 align-extra-store ">
 				<img class="image-extra" src="img/product.png" alt="">
+				<a id="text-on-product" href="#" >Wax <br> &nbsp;&nbsp; 1kg</a>
 				<button class="addtoCart">Add To Cart</button>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-4 align-extra-store">
 				<img class="image-extra" src="img/product.png" alt="">
+				<a id="text-on-product" href="#" >Bee Wax <br> &nbsp;&nbsp; 35g</a>
 				<button class="addtoCart">Add To Cart</button>
 			</div>
 			<div class="col-md-4 align-extra-store">
 				<img class="image-extra " src="img/product.png" alt="">
+				<a id="text-on-product" href="#">Cold Wax Strips <br> &nbsp;&nbsp; 100g</a>
 				<button class="addtoCart">Add To Cart</button>
 			</div>
 			<div class="col-md-4 align-extra-store">
-				<img id="insertVector" class="image-extra background-image-vector" src="img/product.png" alt="">
-				<button class="addtoCart">Add To Cart</button>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4 align-extra-store">
-				<img class="image-extra" src="img/product.png" alt="">
-				<button class="addtoCart">Add To Cart</button>
-			</div>
-			<div class="col-md-4 align-extra-store">
-				<img class="image-extra" src="img/product.png" alt="">
-				<button class="addtoCart">Add To Cart</button>
-			</div>
-			<div class="col-md-4 align-extra-store">
-				<img class="image-extra" src="img/product.png" alt="">
+				<img id="insertVector" class="image-extra background-image-vector" src="img/product.png" alt="">	
+				<a id="text-on-product" href="#">Roll on Wax <br> &nbsp;&nbsp; 100g</a>
 				<button class="addtoCart">Add To Cart</button>
 			</div>
 		</div>
 	</div>
         
 	`
-
 	
 	let backgroundIMG=document.getElementById("insertVector");
 
@@ -292,7 +283,7 @@ function showStore(link){
 
 	console.log(clickImages)
 	
-		for(let i=0;i<clickImages.length;i++){
+		for (let i = 0; i < clickImages.length; i++){
 
 			clickImages[i].addEventListener(`click`,function(){
 
@@ -306,7 +297,7 @@ function showStore(link){
 					<h2>Bee Wax</h2>
 					<p>Ingredients: Rosin, pine resin, bee resin, herbal ointment, boric oil, castor etc…</p>
 					<p id="Popust">-30%</p>
-					<p id="Price">32 &#8364;</p>
+					<p id="Price"><strike>32 Ден.;</strike>22 Ден.</p>
 					<a href="#" class="BuyBtn"><p>ADD TO CART</p></a>
 				</div>
 			</div>

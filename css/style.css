@@ -388,129 +388,163 @@ and resolving yellow flower image in the right corner */
 /* Store CSS */
 
 #store {
-  position: relative;
-  width: 100%;
-  height: auto;
-  background: #F9F9F9;
-  box-shadow: none;
-  transition: 1.5s;
-  filter: none;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #F9F9F9;
+    box-shadow: none;
+    transition: 1.5s;
+    filter: none;
 }
-#store img {
-  width: 100%;
-  overflow: none;
+
+    #store img {
+        width: 100%;
+        overflow: none;
+        position: relative;
+    }
+
+.addtoCart {
+    margin-left: 20%;
+    margin-top: 5%;
+    position: center;
+    text-align: center !important;
+    width: 250px;
+    height: 59px;
+    border: solid #FFD400;
+    border-color: #eeef00;
+    background-color: white;
+    transition: 0.5s;
+    position: relative;
 }
-.addtoCart{
-  text-align: center!important;
-  width:250px;
-  height: 59px;
-  border: solid;
-  border-color:#eeef00 ;
-  background-color: white;
-  display: none;
-  transition: 0.3s;
-  margin-bottom: 50px;
-  position: relative;
+
+#text-on-product {
+    position: absolute;
+    box-shadow: none;
+    text-decoration: none;
+    margin-left: 32%;
+    top: 35%;
+    font-size: 200%;
+    color: yellow;
+    font-family: Raleway;
+    opacity: 0;
+    transition: 0.02s;
 }
-.image-extra:hover + .addtoCart {
-  display: inline-block;
-  
+
+.align-extra-store:hover #text-on-product {
+    opacity: 1;
+    transition: 1s;
 }
-.addtoCart:hover {
-  display: inline-block;
-  background-color: yellow;
-  
+
+.image-extra:hover {
+    transition: 0.5s;
+    position: relative;
+    transform: scale(1.05);
+    filter: blur(1.8px) brightness(80%);
 }
+
+.image-extra:active {
+    transition: 0.05s;
+    position: relative;
+    transform: scale(1.05);
+    filter: blur(1.8px);
+}
+
+.image-extra:hover:active + .addtoCart {
+    display: block;
+    cursor: pointer;
+}
+
+.addtoCart:hover, .addtoCart:active {
+    display: block;
+    background-color: #FFDD3C;
+}
+
 .align-extra-store :hover {
-  text-align: center;
-
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 5px 12px 12px lightslategray;
+    transition: 0.8s;
 }
-.align-extra-store:hover {
-  text-align: center;
-  display: inline-block;
+
+    .align-extra-store:hover .addtoCart:active {
+        text-align: center;
+        margin: 0% !important;
+    }
+
+.product-description {
+    position: absolute !important;
+    display: none;
+    left: 40%;
+    top: 50%;
+    font-weight: bold;
+    color: red;
 }
-.product-description{
 
-position: absolute !important;
-display: none;
-
-left: 40%;
-
-top: 50%;
-font-weight: bold;
-color: red;
-
-  
-}
-.align-extra-store{
-  padding-bottom: 50px;
-  
+.align-extra-store {
+    padding-bottom: 50px;
 }
 
 
 /*CONTAINER FOR PICTURE-PRODUCT & SMALL-INFO*/
-.Picture-Small-Info
-{
-    display:flex;
-    align-items:center;
+.Picture-Small-Info {
+    display: flex;
+    align-items: center;
 }
 
 
 /*PICTURE-PRODUCT FRAME*/
-.picture-product
-{
-    width:50%;
-    padding-left:5%;
-    padding-top:10%;
+.picture-product {
+    width: 50%;
+    padding-left: 5%;
+    padding-top: 10%;
 }
-.picture-product > img
-{
-    width:100%;
-    height:100%;
-    box-shadow:3px 12px 12px lightslategray;
-}
+
+    .picture-product > img {
+        width: 100%;
+        height: 100%;
+        box-shadow: 3px 12px 12px lightslategray;
+    }
 
 
 /*SMALL-INFO ELEMENTS*/
-.Small-Info
-{
-    margin-left:5%;
-    width:50%;
+.Small-Info {
+    margin-left: 5%;
+    width: 50%;
 }
-.Small-Info > h2
-{
-    font-size:270%;
-    margin-top:8%;
-    margin-bottom:6%;
-    color:#333333;
-}
-.Small-Info > p
-{
-    color:#959494;
-    font-size:120%;
-    margin-bottom:15%;
-    font-family: Raleway;
-}
-#Popust
-{
-    position: absolute;
-    display:block;
-    left:55%;
-    top:58%;
-    width: 4%;
-    height: 4%;
+
+    .Small-Info > h2 {
+        font-size: 270%;
+        margin-top: 8%;
+        margin-bottom: 6%;
+        color: #333333;
+    }
+
+    .Small-Info > p {
+        color: #959494;
+        font-size: 120%;
+        margin-bottom: 15%;
+        font-family: Raleway;
+    }
+
+#Popust {
+    position: relative;
+    display: block;
+    left: 2%;
+    top: 38%;
+    width: 20%;
+    height: 20%;
     border: 2px solid #FFFFFF;
-    background-color: yellow;
-    border-color: #eeef00;
+    background-color: #eeef00;
+    border-color: black#eeef00;
     text-decoration: none;
     text-align: center;
-    color:black;
+    color: black;
 }
-#Price
-{
-    color:#959494;
-    font-size:165%;
-    margin-bottom:5%;
+
+#Price {
+    color: #959494;
+    font-size: 165%;
+    margin-bottom: 5%;
 }
 
 
@@ -528,62 +562,62 @@ color: red;
     background-color: none;
     transition: 1s;
 }
-.BuyBtn > p
-{
-    color: dimgrey;
-    text-align:center;
-    text-transform: uppercase;
-    font-family: "Lucida Console", Courier, monospace;
-}
-.BuyBtn:hover {
-    background-color: yellow;
-    transition:1s;
-}
+
+    .BuyBtn > p {
+        color: dimgrey;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Lucida Console", Courier, monospace;
+    }
+
+    .BuyBtn:hover {
+        text-decoration: none;
+        background-color: yellow;
+        transition: 1s;
+    }
 
 
 
 
 /*FULL DESCRIPTION*/
-.Full-Info
-{
-    margin:15% 5%;
+.Full-Info {
+    margin: 15% 5%;
 }
-.Full-Info > hr
-{
-    border: 0;
-    height: 1px;
-    background: #333;
-    background-image: linear-gradient(to right, #ccc, #333, #ccc);
-}
-.Full-Info > p
-{
-    font-size:100%;
-    font-family: Raleway;
-    font-size:120%;
-    line-height: 161.1%;
-    letter-spacing: 0.05em;
-    color: #211F1F;
-}
-.Full-Info > h2
-{
-    color:#333333;
-}
+
+    .Full-Info > hr {
+        border: 0;
+        height: 1px;
+        background: #333;
+        background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    }
+
+    .Full-Info > p {
+        font-size: 100%;
+        font-family: Raleway;
+        font-size: 120%;
+        line-height: 161.1%;
+        letter-spacing: 0.05em;
+        color: #211F1F;
+    }
+
+    .Full-Info > h2 {
+        color: #333333;
+    }
 
 
 
 
 /*SIMILAR PRODUCTS ELEMENTS*/
-.Heading-Similar-Products > h2 
-{
+.Heading-Similar-Products > h2 {
     text-align: left;
-    padding-left:10%;
-    color:#333333;
+    padding-left: 10%;
+    color: #333333;
 }
 /*Pictures and Background tweaks*/
-.carousel slide
-{
-    height:50%;
+.carousel slide {
+    height: 50%;
 }
+
 .grey-background {
     background-color: #E4E4C5;
     border: 20px solid white;
@@ -655,10 +689,9 @@ color: red;
 
 
 /*SEE MORE Btn*/
-.See-More
-{
+.See-More {
     position: absolute;
-    left:40%;
+    left: 40%;
     width: 20%;
     height: 8%;
     border: 2px solid #FFFFFF;
@@ -668,21 +701,40 @@ color: red;
     text-align: center;
     background-color: none;
     transition: 1s;
-    margin-bottom:20%;
-}
-.See-More > p
-{
-    color: dimgrey;
-    text-align:center;
-    text-transform: uppercase;
-    font-family: "Lucida Console", Courier, monospace;
-}
-.See-More:hover
-{
-    background-color: yellow;
-    transition:1s;
+    margin-bottom: 20%;
 }
 
+    .See-More > p {
+        color: dimgrey;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Lucida Console", Courier, monospace;
+    }
+
+    .See-More:hover {
+        background-color: yellow;
+        transition: 1s;
+    }
+
+@media screen and (min-width: 400px) {
+    .See-More {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #Popust {
+        width: 40%;
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #Popust {
+        width: 20%;
+        height: 20%;
+    }
+}
 
 /* Contact CSS */
 
