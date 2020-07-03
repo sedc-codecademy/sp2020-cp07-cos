@@ -1058,6 +1058,7 @@ and resolving yellow flower image in the right corner */
 
 .hp-blog-img {
   padding: 2%;
+ 
 }
 
 .hp-news-btn {
@@ -1212,7 +1213,8 @@ font-weight: normal;
 font-size: 50px;
 line-height: 67px;
 text-align: center;
-padding:20px 0;
+padding-top: 5%;
+padding-bottom: 20%;
 }
 
 .shopping-cart-product-image{
@@ -1248,6 +1250,7 @@ margin-top:20px;
   text-align: center;
   align-items: center;
   vertical-align: center !important;
+  
 }
 .cart-price{
   padding-top:30px;
@@ -1278,12 +1281,17 @@ color: #211F1F;
 
 .shipping-price {
   border-bottom: solid 1px black;
+  
 }
 
 .order-btn {
   padding: 15px 50px;
   border-color:  yellow;
   background-color: rgba(255, 255, 0, 0);
+}
+
+.order-btn:hover {
+  background-color: yellow;
 }
 
 .total-product-value {
@@ -1293,8 +1301,8 @@ color: #211F1F;
 
 .test-value {
   border-bottom: solid 1px black;
-  margin-left: 0;
-  padding-left: 0;
+  margin-left: -30px;
+  padding-left: 30px;
 }
 
 
@@ -1354,4 +1362,78 @@ color: #211F1F;
   .classare {
     display: grid!important;
   }
+  #resizingPrices{
+  
+    align-items: center;
+    text-align: center;
+    margin-left: 30%;
+  }
+
+  .shopping-cart-product-image{
+    width: 40%;
+    height:auto;
+  
+  }
+}
+
+
+
+/*Blog CSS*/
+
+
+.header-blog {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+.hp-blog-img {
+  padding: 50px;
+}
+.smaller-div {
+  background-image: url("https://format-com-cld-res.cloudinary.com/image/private/s--ShY1zB6H--/c_limit,g_center,h_65535,w_550/fl_keep_iptc.progressive,q_95/v1/575114c96aba3e63085150d7ab14a0e0/MILLIE-CONSTANCE-VICTORIA-EDIT-1web.jpg");
+  background-color: white;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 10px;
+  color: rgba(191, 191, 191, 1);
+  height: 100%;
+  
+}
+
+.text-box {
+  background-color: white;
+  border: 1px solid rgba(246, 236, 32, 1);
+  margin: 60% 20% 2%;
+  padding: 20px 0 200px;
+  align-items: center;
+}
+
+
+.pagination {
+  display: block !important;
+  text-align: center;
+  align-items: center;
+  float: center;
+  padding: 20px 0;
+}
+
+.pagination a {
+  color: black;
+  float: center;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
 }

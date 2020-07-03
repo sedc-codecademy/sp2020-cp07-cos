@@ -63,8 +63,12 @@
 })(jQuery);
 ;
 
-var value=0
 
+
+
+
+var value=0
+let aboutUsMain=document.getElementById("seeOurStory")
 //Targeting Nav Element in JS
 let aboutUsNav=document.getElementById("about")
 //Creating a function to show the About Us Section with one parameter
@@ -219,13 +223,7 @@ let aboutFooter=document.getElementById("aboutFooter")
 //Calling the function to show the About us when clicked on the About us from foooter
 
 showAboutUs(aboutFooter)
-let home=document.getElementById("home")
-//Just creating this now until we can implement the HomePage
-home.addEventListener(`click`,function(){
-    let output=document.getElementById("output")
-
-    output.innerHTML=""
-})
+showAboutUs(aboutUsMain)
 
 let store=document.getElementById("store")
 //Creating a function with one parameter to show the Store
@@ -395,6 +393,8 @@ function showStore(link){
 		
 					addtoCartNumber.style.color="red"
 					addtoCartNumber.style.fontSize="1.2em"
+
+				
 				})
 			})
 
@@ -443,7 +443,7 @@ function showContact(link){
 		<div class="col-1 beige-rectangle"></div>
 		<div class="follow-div col-5 pl-5 pt-3">
 			<h3>Social networks</h3>
-			<a href="#0"><i class="fab fa-4x fa-facebook-square"></i></a>
+			<a href="https://www.facebook.com/IviCosmetics/" target="_blank"><i class="fab fa-4x fa-facebook-square"></i></a>
 			<a href="#0"><i class="fab fa-4x fa-instagram"></i></i></a>
 		</div>
 
@@ -463,54 +463,113 @@ let contactFooter=document.getElementById("contact-footer")
 showContact(contactFooter)
 showContact(contactUs)
 
-let cartNavLink=document.getElementById("open-cart")
+//Showing the Cart
+ let cartBtn=document.getElementById("open-cart")
+ cartBtn.addEventListener(`click`,function(){
 
-
-cartNavLink.addEventListener(`click`,function(){
-
+	if(value===0){
+		alert("You Have no Items in your Shopping Cart")
+	}
+	else{
 	let output=document.getElementById("output")
 
-	output.innerHTML=""
-})
+	output.innerHTML=`<div class="container shopping-cart-bottom ">
+	<h1 class="shopping-cart-header">SHOPPING CART</h1>
+	<div class="row  shopping-cart-general" >
+		<div class="col-md-2">
+			<img class="shopping-cart-product-image" src="img/product.png" alt="">
+			</div>
+			<div class="col-md-2 ">
+				
+				<h4 class="product-name ">Face Mask</h4>
+				<p id="price-in-cart" class="cart-price " >$200</p>
+			</div>
+				<div class="col-md-2 cart-column-general second-cart-row">
+					<p class="art-num">Art Number: 00763</p> 
+				</div>
+				<div class="col-md-2 quantity-mobile ">
+					<h4 class="quantity-cart ">Quantity</h4>
+					
+				
 
-var x = window.matchMedia("(max-width: 776px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
+					<select  class="quantity-option cart-column-general" name="quantity" id="quantity-cart">
+  					<option class="quantity-cart-values" value="1">1</option>
+  					<option  class="quantity-cart-values" value="2">2</option>
+					<option class="quantity-cart-values" value="3">3</option>
+					  <option class="quantity-cart-values" value="4">4</option>
+					  <option class="quantity-cart-values"  value="5">5</option>
+					  <option class="quantity-cart-values"  value="6">6</option>
+					  <option class="quantity-cart-values"  value="7">7</option>
+					  <option class="quantity-cart-values"  value="8">8</option>
+					  <option class="quantity-cart-values"  value="9">9</option>
+					  <option class="quantity-cart-values"  value="10">10</option>
+					</select>
+					
+				</div>
+				<div class="col-md-2 cart-column-general second-cart-row"><p>Price</p></div>
 
-function myFunction(x) {
+				<div class="col-md-2 cart-column-general second-cart-row">
+					<p>0</p>
+				</div>
+				
+				
+				
+			</div>
+		</div>
 
-let mobileprices = document.getElementById("klasaepergjithshme")
+		<div class="container">
+		<div id="resizingPrices" class="row" >
+			
+		</div>
+	</div>
+		<div class="container row">
+		<div class="vectors">
+		
+			<img class="brown-img-vector vectors" src="img/shopping-cart-vector.png" alt="">  
+		
+		
+			<img class="yellow-img-vector vectors " src="img/home_v3.png" alt="">
+		
+	</div>`
 
-	if (x.matches) { // If media query matches
+	var resizingPrices = window.matchMedia("(max-width: 776px)")
+myFunction(resizingPrices) // Call listener function at run time
+ // Attach listener function on state changes
+ resizingPrices.addListener(myFunction)
+function myFunction(resizingPrices) {
+
+let mobileprices = document.getElementById("resizingPrices")
+
+	if (resizingPrices.matches) { // If media query matches
 	  mobileprices.innerHTML=` 
-	 <div class="row"> 
-	  <div class=" klasaere"></div> 
+	 <div class="mobile-prices row"> 
+	  <div class=""></div> 
 	  <!-- <div class=""> -->
 		 <div class="">
-			 <p class="klasaere">Price: </p>
-			 <p class="klasaere">Shipping</p> 
-			 <p class="klasaere">Total </p>
+			 <p class="">Price: </p>
+			 <p class="">Shipping</p> 
+			 <p class="">Total Price</p>
 			 <button class="order-btn ">ORDER</button>
 		 </div>
 		 <div class="">
-			 <p class="klasaere">0</p>
-			 <p class="klasaere">0</p>
-			 <p class="klasaere">0</p>
+			 <p>0</p>
+			 <p >0</p>
+			 <p >0</p>
 			 
 		 </div>
 		 </div>`
 	} else {
 		mobileprices.innerHTML=`<div class="container">
 		<div id="klasaepergjithshme" class="row" >
-			 <div class="col-lg-8 col-sm-4"></div> 
-			 <!-- <div class="col-lg-4 order-checkout"> -->
-				<div class="col-lg-2">
+			 <div class="col-md-8 "></div> 
+			 <!-- <div class="col-md-4 order-checkout"> -->
+				<div class="col-md-2">
 					<p class="total-price ">Price: </p>
 					<p class="shipping-price ">Shipping</p> 
 					<p class="total-cost ">Total </p>
 					<button class="order-btn ">ORDER</button>
 				</div>
-				<div class="col-lg-2">
+				<div class="col-md-2">
 					<p class="total-product-value">0</p>
 					<p class="total-product-value test-value">0</p>
 					<p class="total-product-value">0</p>
@@ -529,3 +588,258 @@ let mobileprices = document.getElementById("klasaepergjithshme")
 	}
   }
 
+
+}
+
+ })
+
+
+
+ // SHowing the Store from the Main Butons
+
+ 
+
+function showBlog(link){
+
+
+	link.addEventListener(`click`,function(){
+
+		let output=document.getElementById("output")
+		let bloghtml=`	
+	  <div class="container">
+	  <div class="row hp-blog-row">
+			<div class="col-lg-6 hp-blog-img">
+			  
+			  <div class="smaller-div">
+				<div class="text-box">
+				<p>03.04.2020.</p>
+				<h5>News Title</h5>
+				<p>Author: Bob Bobsky</p>
+			  </div>
+			</div>
+			  </div>
+			<div class="col-lg-6 hp-blog-img">
+				<div class="smaller-div">
+				  <div class="text-box">
+				<p>03.04.2020.</p>
+				<h5>News Title</h5>
+				<p>Author: Bob Bobsky</p>
+					</div>
+			 </div>
+			</div>
+			
+		</div>
+		</div>`
+		output.innerHTML=`
+		<div>
+		  
+		<img class="header-blog" src="img/blog_hero.jpg" />
+	  </div>
+		${bloghtml + bloghtml+bloghtml}
+	
+		  <div class="pagination">
+		
+			<a href="#">1</a>
+			<a href="#" class="active">2</a>
+			<a href="#">3</a>
+			
+			<a href="#">&raquo;</a>`
+	})
+}
+
+
+
+let navBlog=document.getElementById("blog-nav")
+let mainBlogbtn=document.getElementById("seeAllPosts")
+
+showBlog(navBlog)
+showBlog(mainBlogbtn)
+
+let storeMainBtn=document.getElementsByClassName("hero-btn")
+
+ console.log(storeMainBtn.length)
+
+// SHowing the Store from the Main Butons
+ for(let i=0;i<storeMainBtn.length-2;i++){
+
+	storeMainBtn[i].addEventListener(`click`,function(){
+	
+
+	
+			let output=document.getElementById("output")
+	
+			output.innerHTML=`<div id="store">
+			<div class="row">
+				<div class="col-md-4 align-extra-store">
+					<img class="image-extra" src="img/product.png" alt="">
+					<button class="addtoCart">Add To Cart</button>
+				</div>
+				<div class="col-md-4 align-extra-store">
+					<img class="image-extra" src="img/product.png" alt="">
+					<button class="addtoCart">Add To Cart</button>
+				</div>
+				<div class="col-md-4 align-extra-store ">
+					<img class="image-extra" src="img/product.png" alt="">
+					<button class="addtoCart">Add To Cart</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 align-extra-store">
+					<img class="image-extra" src="img/product.png" alt="">
+					<button class="addtoCart">Add To Cart</button>
+				</div>
+				<div class="col-md-4 align-extra-store">
+					<img class="image-extra " src="img/product.png" alt="">
+					<button class="addtoCart">Add To Cart</button>
+				</div>
+				<div class="col-md-4 align-extra-store">
+					<img id="insertVector" class="image-extra background-image-vector" src="img/product.png" alt="">
+					<button class="addtoCart">Add To Cart</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 align-extra-store">
+					<img class="image-extra" src="img/product.png" alt="">
+					<button class="addtoCart">Add To Cart</button>
+				</div>
+				<div class="col-md-4 align-extra-store">
+					<img class="image-extra" src="img/product.png" alt="">
+					<button class="addtoCart">Add To Cart</button>
+				</div>
+				<div class="col-md-4 align-extra-store">
+					<img class="image-extra" src="img/product.png" alt="">
+					<button class="addtoCart">Add To Cart</button>
+				</div>
+			</div>
+		</div>
+			
+		`
+	
+		//Making the Counter go Up with each click on add to Cart.
+			let addtoCartbtn=document.getElementsByClassName("addtoCart")
+	
+	
+			for(let i=0;i<addtoCartbtn.length;i++){
+			addtoCartbtn[i].addEventListener(`click`,function(){
+				let addtoCartNumber=document.getElementById("cart-products")
+	
+				value++
+	
+				addtoCartNumber.innerText=value
+				alert("Product Added to Cart")
+	
+				addtoCartNumber.style.color="red"
+				addtoCartNumber.style.fontSize="1.2em"
+			})}
+		
+		//Ading the flower with JS.
+		let backgroundIMG=document.getElementById("insertVector");
+	
+			
+			backgroundIMG.style.backgroundImage="url('img/Vector.png')";
+			backgroundIMG.style.backgroundColor="rgba(255, 255, 255, 0)";
+			backgroundIMG.style.backgroundRepeat="no-repeat";
+			backgroundIMG.style.backgroundSize="contain";
+		let clickImages=document.getElementsByClassName("image-extra")
+	
+		
+		//Making a loop so that we can add the event listener for each elemept in order to take us to the one Product page. This function will change when we will have to make an Ajax Call.
+			for(let i=0;i<clickImages.length;i++){
+	
+				clickImages[i].addEventListener(`click`,function(){
+	
+					output.innerHTML=`<div class="Picture-Small-Info">
+					<div class="picture-product">
+						<img src='img/product-example.png'/>
+					</div>
+		
+		
+					<div class="Small-Info">
+						<h2>Bee Wax</h2>
+						<p>Ingredients: Rosin, pine resin, bee resin, herbal ointment, boric oil, castor etc…</p>
+						<p id="Popust">-30%</p>
+						<p id="Price">32 &#8364;</p>
+						<a href="#" id="addtoCartSingePage" class="BuyBtn"><p>ADD TO CART</p></a>
+					</div>
+				</div>
+		
+		
+				<div class="Full-Info">
+					<h2>INSTRUCTION FOR USE | ADITIONAL INFORMATION</h2>
+					<hr />
+					<p>
+						Heat the wax in the tin container till it reaches body temperature. Use the piece of wood provided in the box to put the wax on your skin. Put it in the hair growing direction and take it off the opposite direction . Do not put it on the parts covered with pimples .!!!!
+						<br /><br />
+						Put a small amount of the depilatory and then wait 24 hours. If there is not any allergic reaction use the wax products.
+						<br /><br />
+						We strongly recommend you to use one of our supplementary tonics to cool down your skin.
+					</p>
+				</div>
+		
+		
+				<div class="Heading-Similar-Products">
+					<h2>SIMILAR PRODUCTS</h2>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+		
+							<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+								<div class="carousel-inner col-10 mx-auto">
+									<div class="carousel-item active">
+										<div class="row">
+											<div class="col-md-3  col-6 grey-background"><a id="link-similar-products" href="#"><img src="img/store_3.png" class="d-block w-100" alt="product image"><p id="text-similar-products">Product-01</p></a></div>
+											<div class="col-md-3  col-6 grey-background"><a id="link-similar-products" href="#"><img src="img/store_3.png" class="d-block w-100" alt="product image"><p id="text-similar-products">Product-02</p></a></div>
+											<div class="col-md-3  col-6 grey-background"><a id="link-similar-products" href="#"><img src="img/store_3.png" class="d-block w-100" alt="product image"><p id="text-similar-products">Product-03</p></a></div>
+											<div class="col-md-3  col-6 grey-background"><a id="link-similar-products" href="#"><img src="img/store_3.png" class="d-block w-100" alt="product image"><p id="text-similar-products">Product-04</p></a></div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="row">
+											<div class="col-md-3  col-6 grey-background"><a id="link-similar-products" href="#"><img src="img/store_3.png" class="d-block w-100" alt="product image"><p id="text-similar-products">Product-05</p></a></div>
+											<div class="col-md-3  col-6 grey-background"><a id="link-similar-products" href="#"><img src="img/store_3.png" class="d-block w-100" alt="product image"><p id="text-similar-products">Product-06</p></a></div>
+											<div class="col-md-3  col-6 grey-background"><a id="link-similar-products" href="#"><img src="img/store_3.png" class="d-block w-100" alt="product image"><p id="text-similar-products">Product-07</p></a></div>
+											<div class="col-md-3  col-6 grey-background"><a id="link-similar-products" href="#"><img src="img/store_3.png" class="d-block w-100" alt="product image"><p id="text-similar-products">Product-08</p></a></div>
+										</div>
+									</div>
+								</div>
+								<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								</a>
+								<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								</a>
+							</div>
+						</div>
+		
+					</div>
+				</div>
+				<br /><br />
+				<button class="btn-similar-products">Show More</button>`
+	
+				//Incrementing the Products number in the CartElement in Singe Product Page
+				var addtoCartbtnSinglePage=document.getElementById("addtoCartSingePage")
+				
+				addtoCartbtnSinglePage.addEventListener(`click`,function(){
+						let addtoCartNumber=document.getElementById("cart-products")
+			
+						value++
+			
+						addtoCartNumber.innerText=value
+						alert("Product Added to Cart")
+			
+						addtoCartNumber.style.color="red"
+						addtoCartNumber.style.fontSize="1.2em"
+	
+					
+					})
+				})
+	
+			}
+	
+		})
+		
+	
+	
+	}
+		
