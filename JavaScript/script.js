@@ -232,7 +232,7 @@ function showStore(link){
         let output=document.getElementById("output")
 
         output.innerHTML=`<div id="store">
-		<div class="row">
+		<div class="row ">
 			<div class="col-md-4 align-extra-store">
 				<img class="image-extra" src="img/product.png" alt="">
 				<button class="addtoCart">Add To Cart</button>
@@ -246,7 +246,7 @@ function showStore(link){
 				<button class="addtoCart">Add To Cart</button>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row ">
 			<div class="col-md-4 align-extra-store">
 				<img class="image-extra" src="img/product.png" alt="">
 				<button class="addtoCart">Add To Cart</button>
@@ -260,7 +260,7 @@ function showStore(link){
 				<button class="addtoCart">Add To Cart</button>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row ">
 			<div class="col-md-4 align-extra-store">
 				<img class="image-extra" src="img/product.png" alt="">
 				<button class="addtoCart">Add To Cart</button>
@@ -592,7 +592,93 @@ let mobileprices = document.getElementById("resizingPrices")
 }
 
  })
+ function showSingleBlog(link){
 
+	link.addEventListener(`click`,function(){
+
+		let output=document.getElementById("output")
+
+		output.innerHTML=` <div class="container-fluid">
+		<div class="row">
+		  <div class="col-12">
+			<img class="img-fluid blog-hero-img" src="./img/blog_hero.jpg" alt="">
+		  </div>
+		</div>
+	  </div>
+	
+	  <div class="container">
+		<div class="row singl">
+		  <div class="col-md-2"></div>
+		  <div class="col-md-8 blog-details">
+			<p class="blog-date"> 03.04.2020.</p>
+			<h3 class="blog-title">NEWS TITLE</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit lorem leo, sit enim sed in facilisi proin a. Convallis id at magna orci congue amet. Aliquet consequat sed dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			  Velit lorem leo, sit enim sed in facilisi proin a. Convallis id at magna orci congue amet. Aliquet consequat sed dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit lorem leo, sit enim sed in facilisi proin a. Convallis
+			  id at magna orci congue amet.Aliquet consequat sed dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit lorem leo, sit enim sed in facilisi proin a. Convallis id at magna orci congue amet. Aliquet consequat sed dictum.
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit lorem leo, sit enim sed in facilisi proin a. Convallis id at magna orci congue amet. Aliquet consequat sed dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
+			  lorem leo, sit enim sed in facilisi proin a. Convallis id at magna orci congue amet. Aliquet consequat sed dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit lorem leo, sit enim sed in facilisi proin a. Convallis id at
+			  magna orci congue amet. Aliquet consequat sed dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit lorem leo, sit enim sed in facilisi proin a. Convallis id at magna orci congue amet. Aliquet consequat sed dictum.</p>
+		  </div>
+		  <div class="col-md-2"></div>
+		</div>
+	  </div>
+	  <div class="container">
+		<div class="row">
+		  <div class="col-sm-6 col-md-4">
+			<button type="button" class="btn btn-outline blog-btn blog-btn-prev">Previous blog </button> </div>
+		  <div class="col-md-4">
+		  </div>
+		  <div class=" col-sm-6 col-md-4">
+			<button type="button" class="btn btn-outline blog-btn blog-btn-next"> Next blog </button>
+		  </div>
+		</div>
+	  </div>
+	  <div class="container">
+		<div class="row">
+		  <div class="col-md-12 blog-sunflower">
+			<img class="img-fluid" src="./img/blog_v1.png" alt="">
+		  </div>
+		  <div class="col-md-12 blog-recent-title">
+			<h3>MOST RECENT NEWS</h3>
+		  </div>
+		</div>
+	  </div>
+	  <div class="container">
+		<div class="row">
+		  <div class="col-md-6 blog-news-div">
+			<div class="smaller-div">
+			  <div class="text-box">
+				<p>03.04.2020.</p>
+				<h5 class="blognews-title">NEWS TITLE</h5>
+				<p class="blog-p">Author: Bob Bobsky</p>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-6 blog-news-div">
+			<div class="smaller-div">
+			  <div class="text-box">
+				<p>03.04.2020.</p>
+				<h5 class="blognews-title">NEWS TITLE</h5>
+				<p class="blog-p">Author: Bob Bobsky</p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-md-12 blog-all-btn">
+			<button type="button" id="seeAllBlogs" class="btn btn-outline blog-btn">See all posts</button>
+		  </div>
+		</div>
+	  </div>`
+
+	  try{
+		  let seeAllBlogs=document.getElementById("seeAllBlogs")
+		  showBlog(seeAllBlogs)
+	  }
+
+	  finally{}
+	})
+}
 
 
  // SHowing the Store from the Main Butons
@@ -610,7 +696,7 @@ function showBlog(link){
 	  <div class="row hp-blog-row">
 			<div class="col-lg-6 hp-blog-img">
 			  
-			  <div class="smaller-div">
+			  <div class="smaller-div" id="firstElementBlog">
 				<div class="text-box">
 				<p>03.04.2020.</p>
 				<h5>News Title</h5>
@@ -618,7 +704,7 @@ function showBlog(link){
 			  </div>
 			</div>
 			  </div>
-			<div class="col-lg-6 hp-blog-img">
+			<div class="col-lg-6 hp-blog-img" id="secondElementBlog">
 				<div class="smaller-div">
 				  <div class="text-box">
 				<p>03.04.2020.</p>
@@ -644,9 +730,22 @@ function showBlog(link){
 			<a href="#">3</a>
 			
 			<a href="#">&raquo;</a>`
+try{
+			
+			let getBlogClass=document.getElementsByClassName("smaller-div")
+			
+		
+			for(let i=0;i<=getBlogClass.length;i++){
+			
+				showSingleBlog(getBlogClass[i])
+			}
+
+		}
+
+		finally{}
+		
 	})
 }
-
 
 
 let navBlog=document.getElementById("blog-nav")
@@ -843,3 +942,11 @@ let storeMainBtn=document.getElementsByClassName("hero-btn")
 	
 	}
 		
+
+	//Showing the Blog
+
+let blogNav=document.getElementById("blog-nav")
+ 
+
+
+
