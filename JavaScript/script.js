@@ -215,6 +215,7 @@ function showAboutUs(link){
 	</div>
 </div>
 `
+scroll(0,0)
 })
 }
 //Calling the function for the Navigation bar Link
@@ -277,7 +278,7 @@ function showStore(link){
 	</div>
         
 	`
-
+	scroll(0,0)
 	//Making the Counter go Up with each click on add to Cart.
 		let addtoCartbtn=document.getElementsByClassName("addtoCart")
 
@@ -394,7 +395,7 @@ function showStore(link){
 					addtoCartNumber.style.color="red"
 					addtoCartNumber.style.fontSize="1.2em"
 
-				
+					
 				})
 			})
 
@@ -453,6 +454,7 @@ function showContact(link){
 	</div>
 
 </div>`
+scroll(0,0)
 
 })
 }
@@ -585,6 +587,7 @@ let mobileprices = document.getElementById("resizingPrices")
 		 </div>
 		</div>
 	</div>`
+	scroll(0,0)
 	}
   }
 
@@ -676,7 +679,9 @@ let mobileprices = document.getElementById("resizingPrices")
 		  showBlog(seeAllBlogs)
 	  }
 
-	  finally{}
+	  finally{scroll(0,0)}
+
+	
 	})
 }
 
@@ -742,7 +747,7 @@ try{
 
 		}
 
-		finally{}
+		finally{scroll(0,0)}
 		
 	})
 }
@@ -929,7 +934,7 @@ let storeMainBtn=document.getElementsByClassName("hero-btn")
 			
 						addtoCartNumber.style.color="red"
 						addtoCartNumber.style.fontSize="1.2em"
-	
+						scroll(0,0)
 					
 					})
 				})
@@ -943,10 +948,7 @@ let storeMainBtn=document.getElementsByClassName("hero-btn")
 	}
 		
 
-	//Showing the Blog
-
-let blogNav=document.getElementById("blog-nav")
- 
+	
 
 
 
