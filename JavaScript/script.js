@@ -475,8 +475,10 @@ showContact(contactUs)
 	else{
 	let output=document.getElementById("output")
 
-	output.innerHTML=`<div class="container shopping-cart-bottom ">
-	<h1 class="shopping-cart-header">SHOPPING CART</h1>
+	let renderSelectedProducts=`<div class="container shopping-cart-bottom ">
+
+
+	
 	<div class="row  shopping-cart-general" >
 		<div class="col-md-2">
 			<img class="shopping-cart-product-image" src="img/product.png" alt="">
@@ -490,7 +492,7 @@ showContact(contactUs)
 					<p class="art-num">Art Number: 00763</p> 
 				</div>
 				<div class="col-md-2 quantity-mobile ">
-					<h4 class="quantity-cart ">Quantity</h4>
+					<h4 class="quantity-cart" >Quantity</h4>
 					
 				
 
@@ -510,15 +512,20 @@ showContact(contactUs)
 				</div>
 				<div class="col-md-2 cart-column-general second-cart-row"><p>Price</p></div>
 
-				<div class="col-md-2 cart-column-general second-cart-row">
-					<p>0</p>
+				<div class="col-md-2 cart-column-general second-cart-row" id="productPriceTotal">
+					<p>200</p>
 				</div>
 				
 				
 				
 			</div>
-		</div>
-
+		</div>`
+	var	multiplyingProducts=renderSelectedProducts.repeat(value)
+	output.innerHTML=`
+	<h1 class="shopping-cart-header">SHOPPING CART</h1>
+	
+		${multiplyingProducts}
+	
 		<div class="container">
 		<div id="resizingPrices" class="row" >
 			
@@ -534,6 +541,30 @@ showContact(contactUs)
 		
 	</div>`
 
+	//Doing Business Logic for Large Screens
+
+	let productPrice=document.getElementById("price-in-cart")
+		gettingPriceValue=parseInt(productPrice.innerText.slice(1))
+	
+	// Getting quantity value
+	let quantityInCart=document.getElementById("quantity-cart")
+
+	quantityInCart.addEventListener("change", addActivityItem, false);
+
+	function addActivityItem(){
+		let totalProductPrice=document.getElementById("productPriceTotal")
+		stringToNumberPrice=parseInt(totalProductPrice.innerText)
+		//Getting the values to multiply them with the price
+
+		let quantityCartValues=document.getElementsByClassName("quantity-cart-values")
+		for(let i=0;i<quantityCartValues.length;i++){
+			quantityCartValues.text
+		}
+		
+		console.log(quantityCartValues)
+  }
+
+	
 	var resizingPrices = window.matchMedia("(max-width: 776px)")
 myFunction(resizingPrices) // Call listener function at run time
  // Attach listener function on state changes
