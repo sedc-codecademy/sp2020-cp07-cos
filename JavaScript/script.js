@@ -547,10 +547,14 @@ showContact(contactUs)
 		gettingPriceValue=parseInt(productPrice.innerText.slice(1))
 	
 	// Getting quantity value
-	let quantityInCart=document.getElementById("quantity-cart")
+try{
+	let quantityInCart=document.getElementsByClassName("quantity-option")
+	for(let i=0;i<=quantityInCart.length;i++){
+	
+		quantityInCart[i].addEventListener("change", addActivityItem, false);
 
-	quantityInCart.addEventListener("change", addActivityItem, false);
-
+		
+	}
 	function addActivityItem(){
 		let totalProductPrice=document.getElementById("productPriceTotal")
 		stringToNumberPrice=parseInt(totalProductPrice.innerText)
@@ -558,13 +562,59 @@ showContact(contactUs)
 
 		let quantityCartValues=document.getElementsByClassName("quantity-cart-values")
 		for(let i=0;i<quantityCartValues.length;i++){
-			quantityCartValues.text
-		}
 		
-		console.log(quantityCartValues)
+			console.log(quantityCartValues[i].label)
+
+			for(let j=0;j<=i;j++){
+		switch(quantityCartValues[j].label){
+			
+			case "1":
+
+			totalProductPrice.innerText=200
+			break;
+
+			case "2":
+				totalProductPrice.innerText=200*2
+				break;
+
+				case "3":
+					totalProductPrice.innerText=200*3
+				break;
+				case "4":
+					totalProductPrice.innerText=200*4
+				break;
+				case "5":
+					totalProductPrice.innerText=200*5
+				break;
+				case "6":
+					totalProductPrice.innerText=200*6
+				break;
+				case "7":
+					totalProductPrice.innerText=200*7
+				break;
+				case "8":
+					totalProductPrice.innerText=200*8
+				break;
+				case "9":
+					totalProductPrice.innerText=200*9
+				break;
+				case "10":
+					totalProductPrice.innerText=200*10
+				break;
+
+		}
+
+	}
+	}
+		
+		
   }
 
-	
+}
+
+
+finally{
+
 	var resizingPrices = window.matchMedia("(max-width: 776px)")
 myFunction(resizingPrices) // Call listener function at run time
  // Attach listener function on state changes
@@ -624,7 +674,7 @@ let mobileprices = document.getElementById("resizingPrices")
 
 
 }
-
+}
  })
  function showSingleBlog(link){
 
