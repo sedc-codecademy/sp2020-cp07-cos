@@ -512,7 +512,7 @@ showContact(contactUs)
 				</div>
 				<div class="col-md-2 cart-column-general second-cart-row"><p>Price</p></div>
 
-				<div class="col-md-2 cart-column-general second-cart-row" id="productPriceTotal">
+				<div class="col-md-2 total-product-price cart-column-general second-cart-row">
 					<p>200</p>
 				</div>
 				
@@ -541,80 +541,47 @@ showContact(contactUs)
 		
 	</div>`
 
-	//Doing Business Logic for Large Screens
-
-	let productPrice=document.getElementById("price-in-cart")
-		gettingPriceValue=parseInt(productPrice.innerText.slice(1))
 	
-	// Getting quantity value
-try{
-	let quantityInCart=document.getElementsByClassName("quantity-option")
-	for(let i=0;i<=quantityInCart.length;i++){
+
+
 	
-		quantityInCart[i].addEventListener("change", addActivityItem, false);
+	//Calculating the Prices witht the Quantity :D
 
-		
-	}
-	function addActivityItem(){
-		let totalProductPrice=document.getElementById("productPriceTotal")
-		stringToNumberPrice=parseInt(totalProductPrice.innerText)
-		//Getting the values to multiply them with the price
-
-		let quantityCartValues=document.getElementsByClassName("quantity-cart-values")
-		for(let i=0;i<quantityCartValues.length;i++){
-		
-			console.log(quantityCartValues[i].label)
-
-			for(let j=0;j<=i;j++){
-		switch(quantityCartValues[j].label){
-			
-			case "1":
-
-			totalProductPrice.innerText=200
-			break;
-
-			case "2":
-				totalProductPrice.innerText=200*2
-				break;
-
-				case "3":
-					totalProductPrice.innerText=200*3
-				break;
-				case "4":
-					totalProductPrice.innerText=200*4
-				break;
-				case "5":
-					totalProductPrice.innerText=200*5
-				break;
-				case "6":
-					totalProductPrice.innerText=200*6
-				break;
-				case "7":
-					totalProductPrice.innerText=200*7
-				break;
-				case "8":
-					totalProductPrice.innerText=200*8
-				break;
-				case "9":
-					totalProductPrice.innerText=200*9
-				break;
-				case "10":
-					totalProductPrice.innerText=200*10
-				break;
-
+	//Getting the options from the dropdown 
+		let quantityOption=document.getElementsByClassName("quantity-option")
+//Putting them through a loop
+		for(let i=0;i<quantityOption.length;i++){
+//Adding an event Listener that listens to change in dropdown. If there is a change we call the addActivityItem
+			quantityOption[i].addEventListener("change",addActivityItem,false);
 		}
 
+	//We do our business logic in the addActivityItem Function
+function addActivityItem(){
+
+//We target the selec option again.
+	var e=document.getElementsByClassName("quantity-option")
+	//We get the Product prices (We are targetting a class, since there will be more than 1 option when two or more products are added)
+	let totalProductPrice=document.getElementsByClassName("total-product-price")
+	//Creating a loop to loop through the options
+	for(let i=0;i<e.length;i++){
+		//Making  the value of the product  200 everytime the loop iterates
+		totalProductPrice[i].innerText=200
+		// THe total variable parses two strings to numbers and adds them up
+		 var total=parseInt(totalProductPrice[i].innerText)*parseInt(e[i].value).toString()
+
+		 //We assign the total to the price
+		totalProductPrice[i].innerText=total
 	}
-	}
-		
-		
-  }
+
+	
+
 
 }
 
 
-finally{
-
+//Ok so it was difficult to make the prices mobile friendly
+//I created a function that listens when the window resizes and changes the html accordingly. 
+//This approach will make us implement the business logic twice, but until further and better implementation we will go with this method
 	var resizingPrices = window.matchMedia("(max-width: 776px)")
 myFunction(resizingPrices) // Call listener function at run time
  // Attach listener function on state changes
@@ -625,37 +592,75 @@ let mobileprices = document.getElementById("resizingPrices")
 
 	if (resizingPrices.matches) { // If media query matches
 	  mobileprices.innerHTML=` 
+	
 	 <div class="mobile-prices row"> 
 	  <div class=""></div> 
 	  <!-- <div class=""> -->
 		 <div class="">
-			 <p class="">Price: </p>
-			 <p class="">Shipping</p> 
-			 <p class="">Total Price</p>
-			 <button class="order-btn ">ORDER</button>
+			 <p class="" >Price: </p>
+			 <p class="" >Shipping</p> 
+			 <p class="" >Total Price</p>
+			 <button class="order-btn" id="placeOrder">ORDER</button>
 		 </div>
 		 <div class="">
-			 <p>0</p>
-			 <p >0</p>
-			 <p >0</p>
+			 <p id="productsCalculated">0</p>
+			 <p id="shippingPrice" >0</p>
+			 <p  >0</p>
 			 
 		 </div>
 		 </div>`
+		 
+
+	//Targeting the element which holds the Total Price
+		//Getting the options from the dropdown 
+		let quantityOption=document.getElementsByClassName("quantity-option")
+//Putting them through a loop
+		for(let i=0;i<quantityOption.length;i++){
+//Adding an event Listener that listens to change in dropdown. If there is a change we call the addActivityItem
+			quantityOption[i].addEventListener("change",calculateCost,false);
+		}
+
+
+	function calculateCost(){
+		var make=[]
+
+	let totalProductPrice=document.getElementsByClassName("total-product-price")
+	let productsCalculated=document.getElementById("productsCalculated")
+
+		for(let i=0;i<totalProductPrice.length;i++){
+			
+
+			
+			make.push(parseInt(totalProductPrice[i].innerText))
+			
+		 
+			var totalPrice=make.reduce(function(a,b ){
+
+				return a+b;
+			})
+		
+		}	
+
+
+		productsCalculated.innerText=totalPrice;
+
+}
+
 	} else {
 		mobileprices.innerHTML=`<div class="container">
 		<div id="klasaepergjithshme" class="row" >
 			 <div class="col-md-8 "></div> 
 			 <!-- <div class="col-md-4 order-checkout"> -->
 				<div class="col-md-2">
-					<p class="total-price ">Price: </p>
-					<p class="shipping-price ">Shipping</p> 
-					<p class="total-cost ">Total </p>
-					<button class="order-btn ">ORDER</button>
+					<p class="total-price" >Price: </p>
+					<p class="shipping-price" >Shipping</p> 
+					<p class="total-cost">Total </p>
+					<button class="order-btn" id="placeOrder">ORDER</button>
 				</div>
 				<div class="col-md-2">
-					<p class="total-product-value">0</p>
-					<p class="total-product-value test-value">0</p>
-					<p class="total-product-value">0</p>
+					<p class="total-product-value" id="productsCalculated">0</p>
+					<p class="total-product-value test-value" id="shippingPrice">0</p>
+					<p class="total-product-value" id="calculatedTotal">0</p>
 					
 				</div>
 
@@ -668,13 +673,59 @@ let mobileprices = document.getElementById("resizingPrices")
 		 </div>
 		</div>
 	</div>`
-	scroll(0,0)
+
+	//Targeting the element which holds the Total Price
+		//Getting the options from the dropdown 
+		let quantityOption=document.getElementsByClassName("quantity-option")
+//Putting them through a loop
+		for(let i=0;i<quantityOption.length;i++){
+//Adding an event Listener that listens to change in dropdown. If there is a change we call the addActivityItem
+			quantityOption[i].addEventListener("change",calculateCost,false);
+		}
+
+
+	function calculateCost(){
+		var make=[]
+
+	let totalProductPrice=document.getElementsByClassName("total-product-price")
+	let productsCalculated=document.getElementById("productsCalculated")
+
+		for(let i=0;i<totalProductPrice.length;i++){
+			
+
+			
+			make.push(parseInt(totalProductPrice[i].innerText))
+			
+		 
+			var totalPrice=make.reduce(function(a,b ){
+
+				return a+b;
+			})
+		
+		}	
+
+
+		productsCalculated.innerText=totalPrice;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 	}
   }
 
 
 }
-}
+
  })
  function showSingleBlog(link){
 
