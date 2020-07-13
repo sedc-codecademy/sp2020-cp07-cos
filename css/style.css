@@ -1,4 +1,11 @@
 
+
+
+body {
+  margin: 0;
+  /*overflow for removing horizontal scroll*/
+  overflow-x: hidden;
+}
 /* Navbar Starts Here*/
 
 #navbar-primary .navbar-nav {
@@ -389,8 +396,6 @@ and resolving yellow flower image in the right corner */
 
 #store {
     position: relative;
-    width: 100%;
-    height: auto;
     background: #F9F9F9;
     box-shadow: none;
     transition: 1.5s;
@@ -398,9 +403,10 @@ and resolving yellow flower image in the right corner */
 }
 
     #store img {
-        width: 100%;
+        width: 50%;
         overflow: none;
         position: relative;
+        margin-left: 25%;
     }
 
 .addtoCart {
@@ -433,6 +439,11 @@ and resolving yellow flower image in the right corner */
 .align-extra-store:hover #text-on-product {
     opacity: 1;
     transition: 1s;
+}
+
+.image-extra{
+
+  
 }
 
 .image-extra:hover {
@@ -482,6 +493,7 @@ and resolving yellow flower image in the right corner */
 
 .align-extra-store {
     padding-bottom: 50px;
+   
 }
 
 
@@ -862,4 +874,719 @@ and resolving yellow flower image in the right corner */
     transform: translate(2em, 0);
   }
 
+}
+
+
+/* Home Page CSS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;600&display=swap');
+
+
+.container-fluid {
+  padding: 0;
+}
+
+.hero {
+  padding: 0;
+}
+
+.hero-caption {
+  text-align: left;
+  margin-bottom: 5%;
+  margin-left: -2%;
+}
+
+.hero-title {
+  color: rgba(111, 105, 58, 0.9);
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-btn {
+  border: 1px solid rgba(246, 235, 33, 1);
+  font-family: 'Raleway', sans-serif;
+  color: rgba(111, 105, 58, 0.82);
+  font-size: 18px;
+  padding-top: 1%;
+  border-radius: 0;
+  
+}
+
+
+
+.hero-btn:hover{
+  
+ 
+}
+
+.sale-baner {
+  background-color: rgba(246, 235, 33, 1);
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding-top: 0.5%;
+}
+
+.hp-products-title {
+  font-family: 'Playfair Display', serif;
+  color: #333;
+  text-align: center;
+  padding-bottom: 2%;
+  padding-top: 4%;
+}
+
+.hp-product-description, .hp-product-description2 {
+  align-self: center;
+  padding-top: 7%;
+}
+
+.hp-product-names1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #333;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+.hp-product-text {
+  color: rgba(149, 148, 148, 1);
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  text-align: justify;
+  padding-bottom: 3%;
+}
+
+.hp-product-names2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #333;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  text-align: right;
+}
+
+.hp-product-btn2 {
+  border: 1px solid rgba(246, 235, 33, 1);
+  border-radius: 0;
+  background-color: transparent;
+  font-family: 'Raleway', sans-serif;
+  color: rgba(111, 105, 58, 0.82);
+  font-size: 18px;
+  padding-top: 1%;
+  float: right;
+}
+
+.hp-partners-title {
+  text-align: center;
+  padding-top: 7%;
+  padding-bottom: 3%;
+  font-family: 'Playfair Display', serif;
+}
+
+.hp-rectangle-row {
+  padding: 0px;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: rgba(228, 228, 197, 0.87);
+  border: 1px solid #F6EC20;
+  margin: 0;
+}
+
+.hp-partners-logo {
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.hp-partners-logo>i {
+  /*font-size: 96px;*/
+  color: #333;
+}
+
+.hp-partners {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.hp-partners, .hp-partners-list {
+  /*float: left;*/
+  padding-top: 2%;
+  padding-bottom: 2%;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.hp-partners, .hp-partners-list:last-child {
+  margin-right: 0;
+}
+
+.hp-ourstory-row {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.hp-ourstory-title, .hp-blog-title {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  /*font-size: 46px;*/
+  color: #333;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.hp-ourstory-text {
+  text-align: justify;
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+
+.hp-ourstory-details {
+  color: rgba(149, 148, 148, 1);
+}
+
+.btn-read {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+.hp-blog-img {
+  padding: 2%;
+ 
+}
+
+.hp-news-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+
+.hp-blog-img {
+  padding: 10px;
+}
+
+.proba {
+  background-image: url('../img/home_v4.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.smaller-div {
+  background-image: url('../img/blog_1.jpg');
+  background-color: white;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 1%;
+  color: rgba(191, 191, 191, 1);
+  cursor: pointer;
+}
+
+.text-box {
+  background-color: white;
+  border: 1px solid rgba(246, 236, 32, 1);
+  margin: 40% 20% 2%;
+  padding: 20px 0 10px;
+}
+
+.hp-blog-p {
+  padding-top: 40px;
+  font-size: 12px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hp-blognews-title {
+  color: #333;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hp-products-title {
+    font-size: 24px;
+  }
+
+  .hp-partners-title {
+    font-size: 24px;
+  }
+
+  .hp-ourstory-title, .hp-blog-title {
+    font-size: 24px;
+  }
+
+  .hp-partners-logo>i {
+    font-size: 56px;
+  }
+
+  .hp-product-description2 {
+    order: 2;
+  }
+
+  .hp-product-img2 {
+    order: 1;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hp-products-title {
+    font-size: 28px;
+  }
+
+  .hp-partners-title {
+    font-size: 28px;
+  }
+
+  .hp-ourstory-title, .hp-blog-title {
+    font-size: 28px;
+  }
+
+  .hp-partners-logo>i {
+    font-size: 56px;
+  }
+
+  .hp-product-description2 {
+    order: 2;
+  }
+
+  .hp-product-img2 {
+    order: 1;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 72px;
+  }
+
+  .hp-products-title {
+    font-size: 46px;
+  }
+
+  .hp-partners-title {
+    font-size: 46px;
+  }
+
+  .hp-partners-logo>i {
+    font-size: 96px;
+  }
+
+  .hp-ourstory-title, .hp-blog-title {
+    font-size: 46px;
+  }
+
+  .hp-product-description2 {
+    order: 1;
+  }
+
+  .hp-product-img2 {
+    order: 2;
+  }
+}
+
+
+/* Cart CSS*/
+
+.shopping-cart-header{
+
+font-family: Playfair Display;
+font-style: normal;
+font-weight: normal;
+font-size: 50px;
+line-height: 67px;
+text-align: center;
+padding-top: 5%;
+padding-bottom: 20%;
+}
+
+.shopping-cart-product-image{
+  width: 100%;
+  height:auto;
+
+}
+
+.product-name{
+  font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+/* identical to box height, or 29px */
+
+letter-spacing: 0.05em;
+
+color: #211F1F;
+}
+
+.quantity-option{
+margin-top:20px;
+  padding:10px 20px ;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  vertical-align: center;
+  margin-left: 35px;
+}
+
+.cart-column-general{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  vertical-align: center !important;
+  
+}
+.cart-price{
+  padding-top:30px;
+}
+
+.quantity-cart{
+  font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+/* identical to box height, or 29px */
+
+letter-spacing: 0.05em;
+
+color: #211F1F;
+}
+
+.shopping-cart-general{
+
+  border-bottom: solid 1px black;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.order-checkout {
+  padding-top: 30px;
+}
+
+.shipping-price {
+  border-bottom: solid 1px black;
+  
+}
+
+.order-btn {
+  padding: 15px 50px;
+  border-color:  yellow;
+  background-color: rgba(255, 255, 0, 0);
+}
+
+.order-btn:hover {
+  background-color: yellow;
+}
+
+.total-product-value {
+  padding-left:0;
+  align-items: baseline;
+}
+
+.test-value {
+  border-bottom: solid 1px black;
+  margin-left: -30px;
+  padding-left: 30px;
+}
+
+
+.klasaere {
+  align-items: center;
+}
+
+@media screen and (max-width: 776px) {
+  
+  .cart-column-general{
+    display: block;
+    text-align: center;
+    align-items: center;
+    
+  }
+  .quantity-option{
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    margin-left: -10px;
+    
+  }
+  .quantity-cart {
+    display: block;
+    text-align: center;
+    align-items: center;
+  }
+
+  .quantity-mobile{
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .shopping-cart-general {
+    display: flexbox;
+    text-align: center;
+    align-items: center;
+    
+  }
+
+  .second-cart-row > p {
+    text-align: center;
+    margin-right: 5px;
+  }
+
+  .order-checkout {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+  }
+  .shipping-price {
+    padding-bottom: 20px;
+  }
+
+  .classare {
+    display: grid!important;
+  }
+  #resizingPrices{
+  
+    align-items: center;
+    text-align: center;
+    margin-left: 30%;
+  }
+
+  .shopping-cart-product-image{
+    width: 40%;
+    height:auto;
+  
+  }
+}
+
+
+
+/*Blog CSS*/
+
+
+.header-blog {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+.hp-blog-img {
+  padding: 50px;
+}
+.smaller-div {
+  background-image: url("https://format-com-cld-res.cloudinary.com/image/private/s--ShY1zB6H--/c_limit,g_center,h_65535,w_550/fl_keep_iptc.progressive,q_95/v1/575114c96aba3e63085150d7ab14a0e0/MILLIE-CONSTANCE-VICTORIA-EDIT-1web.jpg");
+  background-color: white;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 10px;
+  color: rgba(191, 191, 191, 1);
+  height: 100%;
+  
+}
+
+.text-box {
+  background-color: white;
+  border: 1px solid rgba(246, 236, 32, 1);
+  margin: 60% 20% 2%;
+  padding: 20px 0 200px;
+  align-items: center;
+}
+
+
+.pagination {
+  display: block !important;
+  text-align: center;
+  align-items: center;
+  float: center;
+  padding: 20px 0;
+}
+
+.pagination a {
+  color: black;
+  float: center;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+
+/*Single Blog Page CSS*/
+
+.container-fluid {
+  padding: 0;
+}
+
+.blog-hero-img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-details {
+  background-color: rgba(228, 228, 197, 0.12);
+  border: 1px solid rgba(246, 236, 32, 1);
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  text-align: justify;
+}
+
+.blog-title {
+  color: white;
+  text-shadow: 1px 1px black;
+  font-family: 'Playfair Display', serif;
+  padding: 10%;
+  text-align: center;
+}
+
+.blog-date {
+  text-align: left;
+  color: white;
+  font-size: 16px;
+}
+
+.blog-btn-prev {
+  float: left;
+}
+
+.blog-btn-next {
+  float: right;
+}
+
+.blog-btn {
+  padding: 2%;
+  border: 1px solid rgba(246, 235, 33, 1);
+  background-color: transparent;
+  font-family: 'Raleway', sans-serif;
+  color: rgba(111, 105, 58, 0.82);
+  font-size: 18px;
+  padding-top: 1%;
+  border-radius: 0;
+}
+
+.blog-sunflower {
+  text-align: center;
+  padding: 2%;
+}
+
+.blog-recent-title {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #333;
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+
+.blog-news-div {
+  padding: 2%;
+}
+
+.smaller-div {
+  background-image: url('../img/blog_1.jpg');
+  background-color: white;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 1%;
+  color: rgba(191, 191, 191, 1);
+}
+
+.text-box {
+  background-color: white;
+  border: 1px solid rgba(246, 236, 32, 1);
+  margin: 40% 20% 2%;
+  padding: 20px 0 10px;
+}
+
+.blog-p {
+  padding-top: 40px;
+  font-size: 12px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.blognews-title {
+  color: #333;
+  font-family: 'Playfair Display', serif;
+}
+
+.blog-all-btn {
+  text-align: center;
+  padding: 3%;
+}
+
+@media only screen and (max-width: 600px) {
+  .blog-title {
+    font-size: 36px;
+  }
+
+  .blog-recent-title {
+    font-size: 26px;
+  }
+
+  .blog-details {
+    font-size: 18px;
+  }
+
+  .blog-details {
+    margin-top: -30%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .blog-title {
+    font-size: 46px;
+  }
+
+  .blog-recent-title {
+    font-size: 36px;
+  }
+
+  .blog-details {
+    font-size: 22px;
+  }
+
+  .blog-details {
+    margin-top: -25%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .blog-details {
+    margin-top: -20%;
+  }
 }
