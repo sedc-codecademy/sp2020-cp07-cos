@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SEDC.IVICosmetics.DataAccess", "SEDC.IVICosmetics.DataAccess\SEDC.IVICosmetics.DataAccess.csproj", "{3591072C-39A5-4E68-9D41-9FB5BA526143}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SEDC.IVICosmetics.Domain", "SEDC.IVICosmetics.Domain\SEDC.IVICosmetics.Domain.csproj", "{8D758E17-8CD5-4B73-9AF8-B36EAECC83A2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SEDC.IVICosmetics.Services", "SEDC.IVICosmetics.Services\SEDC.IVICosmetics.Services.csproj", "{1D20641E-EB0F-4DCF-8711-458C1CAA0765}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "IviCosmeticsDataBase", "IviCosmeticsDataBase\IviCosmeticsDataBase.sqlproj", "{0CC8FC3A-C210-4ADE-AB43-A04517D20016}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IVICosmetics.Web", "IVICosmetics.Web\IVICosmetics.Web.csproj", "{DB711B9E-72C2-41B6-82A6-37513DB0F71E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3591072C-39A5-4E68-9D41-9FB5BA526143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3591072C-39A5-4E68-9D41-9FB5BA526143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3591072C-39A5-4E68-9D41-9FB5BA526143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3591072C-39A5-4E68-9D41-9FB5BA526143}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D758E17-8CD5-4B73-9AF8-B36EAECC83A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D758E17-8CD5-4B73-9AF8-B36EAECC83A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D758E17-8CD5-4B73-9AF8-B36EAECC83A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D758E17-8CD5-4B73-9AF8-B36EAECC83A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D20641E-EB0F-4DCF-8711-458C1CAA0765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D20641E-EB0F-4DCF-8711-458C1CAA0765}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D20641E-EB0F-4DCF-8711-458C1CAA0765}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D20641E-EB0F-4DCF-8711-458C1CAA0765}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CC8FC3A-C210-4ADE-AB43-A04517D20016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CC8FC3A-C210-4ADE-AB43-A04517D20016}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CC8FC3A-C210-4ADE-AB43-A04517D20016}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0CC8FC3A-C210-4ADE-AB43-A04517D20016}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CC8FC3A-C210-4ADE-AB43-A04517D20016}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CC8FC3A-C210-4ADE-AB43-A04517D20016}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DB711B9E-72C2-41B6-82A6-37513DB0F71E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB711B9E-72C2-41B6-82A6-37513DB0F71E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB711B9E-72C2-41B6-82A6-37513DB0F71E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB711B9E-72C2-41B6-82A6-37513DB0F71E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {998C36D6-43C6-4546-9E31-0FB17FAA356B}
+	EndGlobalSection
+EndGlobal

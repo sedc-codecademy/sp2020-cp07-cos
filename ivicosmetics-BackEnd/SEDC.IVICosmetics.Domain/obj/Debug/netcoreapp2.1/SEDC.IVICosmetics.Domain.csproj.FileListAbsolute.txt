@@ -1,0 +1,9 @@
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.Domain\bin\Debug\netcoreapp2.1\SEDC.IVICosmetics.Domain.deps.json
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.Domain\bin\Debug\netcoreapp2.1\SEDC.IVICosmetics.Domain.dll
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.Domain\bin\Debug\netcoreapp2.1\SEDC.IVICosmetics.Domain.pdb
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.Domain\obj\Debug\netcoreapp2.1\SEDC.IVICosmetics.Domain.csprojAssemblyReference.cache
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.Domain\obj\Debug\netcoreapp2.1\SEDC.IVICosmetics.Domain.AssemblyInfoInputs.cache
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.Domain\obj\Debug\netcoreapp2.1\SEDC.IVICosmetics.Domain.AssemblyInfo.cs
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.Domain\obj\Debug\netcoreapp2.1\SEDC.IVICosmetics.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.Domain\obj\Debug\netcoreapp2.1\SEDC.IVICosmetics.Domain.dll
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.Domain\obj\Debug\netcoreapp2.1\SEDC.IVICosmetics.Domain.pdb

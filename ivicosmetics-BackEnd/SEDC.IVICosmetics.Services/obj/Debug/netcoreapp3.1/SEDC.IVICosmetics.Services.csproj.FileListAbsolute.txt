@@ -1,0 +1,9 @@
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.Services\bin\Debug\netcoreapp3.1\SEDC.IVICosmetics.Services.deps.json
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.Services\bin\Debug\netcoreapp3.1\SEDC.IVICosmetics.Services.dll
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.Services\bin\Debug\netcoreapp3.1\SEDC.IVICosmetics.Services.pdb
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.Services\obj\Debug\netcoreapp3.1\SEDC.IVICosmetics.Services.csprojAssemblyReference.cache
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.Services\obj\Debug\netcoreapp3.1\SEDC.IVICosmetics.Services.AssemblyInfoInputs.cache
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.Services\obj\Debug\netcoreapp3.1\SEDC.IVICosmetics.Services.AssemblyInfo.cs
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.Services\obj\Debug\netcoreapp3.1\SEDC.IVICosmetics.Services.csproj.CoreCompileInputs.cache
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.Services\obj\Debug\netcoreapp3.1\SEDC.IVICosmetics.Services.dll
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.Services\obj\Debug\netcoreapp3.1\SEDC.IVICosmetics.Services.pdb

@@ -1,0 +1,9 @@
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\IviCosmeticsDataBase\bin\Debug\IviCosmeticsDataBase.dacpac
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\IviCosmeticsDataBase\bin\Debug\IviCosmeticsDataBase.dll
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\IviCosmeticsDataBase\bin\Debug\IviCosmeticsDataBase.pdb
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\IviCosmeticsDataBase\obj\Debug\Model.xml
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\IviCosmeticsDataBase\obj\Debug\refactor.xml
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\IviCosmeticsDataBase\obj\Debug\postdeploy.sql
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\IviCosmeticsDataBase\obj\Debug\predeploy.sql
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\IviCosmeticsDataBase\obj\Debug\IviCosmeticsDataBase.dll
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\IviCosmeticsDataBase\obj\Debug\IviCosmeticsDataBase.pdb

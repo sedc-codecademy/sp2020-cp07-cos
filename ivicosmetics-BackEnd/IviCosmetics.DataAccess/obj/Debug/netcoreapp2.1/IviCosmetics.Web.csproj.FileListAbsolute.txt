@@ -1,0 +1,4 @@
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\IviCosmetics.DataAccess\obj\Debug\netcoreapp2.1\IviCosmetics.Web.csprojAssemblyReference.cache
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\IviCosmetics.DataAccess\obj\Debug\netcoreapp2.1\IviCosmetics.Web.AssemblyInfoInputs.cache
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\IviCosmetics.DataAccess\obj\Debug\netcoreapp2.1\IviCosmetics.Web.AssemblyInfo.cs
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\IviCosmetics.DataAccess\obj\Debug\netcoreapp2.1\IviCosmetics.Web.csproj.CoreCompileInputs.cache

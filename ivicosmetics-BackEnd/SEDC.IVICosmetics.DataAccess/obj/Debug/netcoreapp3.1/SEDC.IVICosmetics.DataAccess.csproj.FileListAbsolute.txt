@@ -1,0 +1,9 @@
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.DataAccess\bin\Debug\netcoreapp3.1\SEDC.IVICosmetics.DataAccess.deps.json
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.DataAccess\bin\Debug\netcoreapp3.1\SEDC.IVICosmetics.DataAccess.dll
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.DataAccess\bin\Debug\netcoreapp3.1\SEDC.IVICosmetics.DataAccess.pdb
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.DataAccess\obj\Debug\netcoreapp3.1\SEDC.IVICosmetics.DataAccess.csprojAssemblyReference.cache
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.DataAccess\obj\Debug\netcoreapp3.1\SEDC.IVICosmetics.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.DataAccess\obj\Debug\netcoreapp3.1\SEDC.IVICosmetics.DataAccess.AssemblyInfo.cs
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.DataAccess\obj\Debug\netcoreapp3.1\SEDC.IVICosmetics.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.DataAccess\obj\Debug\netcoreapp3.1\SEDC.IVICosmetics.DataAccess.dll
+C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\SEDC.IVICosmetics.DataAccess\obj\Debug\netcoreapp3.1\SEDC.IVICosmetics.DataAccess.pdb
