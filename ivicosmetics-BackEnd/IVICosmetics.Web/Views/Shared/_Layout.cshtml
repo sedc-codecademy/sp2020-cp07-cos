@@ -1,32 +1,67 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - IVICosmetics.Web</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="https://kit.fontawesome.com/078356818b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;600&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">IVICosmetics.Web</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <a class="navbar-brand d-lg-none" asp-area="" asp-controller="Home" asp-action="Index"><img class="logo" src="img/ivi-logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarToggle">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index" onClick="window.location.reload();" id="home" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="About" asp-action="About" id="about" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Store" asp-action="Store" id="store" href="#">Store</a>
+                    </li>
+                </ul>
+
+                <a class="navbar-brand d-none d-lg-block" onClick="window.location.reload();" href="#"><img class="logo" id="navLogo" src="img/ivi-logo.png" alt=""></a>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Blog" asp-action="Blog" id="blog-nav" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Contact" asp-action="Contact" href="#" id="contact">Contact</a>
+                    </li>
+                </ul>
+
+                <div style="position: absolute; right:20px;" class="justify-content-right navbar-collapse navbar-extra-mobile">
+                    <ul class="navbar-nav justify-content-right extra">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a style="padding-top: 0.8em!important; padding-right: 0.5em!important; padding-left: 0.5em!important;" class="nav-link" href="#"><img class="extra-icon" src="img/searchicon.svg" alt=""></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
+
+                            <a id="open-cart" style="padding-top: 0.8em!important; padding-right: 0.5em!important; padding-left: 0.5em!important;" class="nav-link" href="#"><p><img class="extra-icon" src="img/shoppingcart.svg" alt=""><sub id="cart-products" style="bottom: -0.75em; left: 0.1em;"></sub></p></a>
+
                     </ul>
+
                 </div>
+
             </div>
+
         </nav>
     </header>
     <div class="container">
@@ -35,11 +70,69 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - IVICosmetics.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <div id="footer"
+    <footer>
+        <div class="upper_footer">
+            <div class="container-fluid" id="footer_text">
+                <!-- The rectangle Class is for the Yellowish border which surrounds the Footer -->
+                <div class="rectangle">
+                    <div class="row-text1">
+
+
+                        <div class="row">
+                            <div class="column">
+                                <h2><a href=""> Contact </a></h2>
+                                <p><a href="#">Tel +38922444528 </a></p>
+                                <p><a href="#">Mob +38975869749 </a></p>
+                                <p id="address_footer">
+                                    <a href="#">
+                                        Bul Jane Sandanski 105 <br>
+                                        1000 Skopje Macedonia
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="column">
+                                <h2><a href="#">Help </a></h2>
+                                <p><a href="#">FAQ's </a></p>
+                                <p><a href="#">Pricing Plans </a></p>
+                                <p><a href="#">Track </a></p>
+                                <p><a href="#">Your Order </a></p>
+                                <p><a href="#">Returns </a></p>
+                            </div>
+                            <div class="column">
+                                <h2 id="aboutFooter">ABOUT US </h2>
+                                <p><a href="#">Our Story </a></p>
+                                <p><a href="">Job Opportunities </a></p>
+                                <p id="store-footer">Store</p>
+                                <p><a href="#" id="contact-footer">Contact Us </a></p>
+
+                            </div>
+                            <div class="column">
+                                <h2 id="customer-services"><a href="#">Customer Services </a></h2>
+                                <p><a href="#">My Account </a></p>
+                                <p><a href="#">Terms of Use </a></p>
+                                <p><a href="#">Deliveries & Returns </a></p>
+                                <p><a href="#">Gift Card </a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lower_footer">
+                <div class="lower-inline">
+                    <div class="rights-reserved"><p> &copy; 2020 All rights Reserved</p></div>
+                    <div class="bank-images">
+                        <i class="fab fa-cc-paypal"></i> <i class="fab fa-cc-mastercard"></i> <i class="fab fa-cc-visa"></i>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </footer>
+
+
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
