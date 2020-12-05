@@ -35,3 +35,40 @@ C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\IVICosmetics.Web\obj\Debug\n
 C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\IVICosmetics.Web\obj\Debug\netcoreapp3.1\IVICosmetics.Web.pdb
 C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\IVICosmetics.Web\obj\Debug\netcoreapp3.1\IVICosmetics.Web.genruntimeconfig.cache
 C:\Users\Betim Osmani\Documents\GitHub\ivicosmetics\IVICosmetics.Web\obj\Debug\netcoreapp3.1\IVICosmetics.Web.csproj.CopyComplete
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\bin\Debug\netcoreapp3.1\IVICosmetics.Web.exe
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\bin\Debug\netcoreapp3.1\IVICosmetics.Web.deps.json
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\bin\Debug\netcoreapp3.1\IVICosmetics.Web.runtimeconfig.json
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\bin\Debug\netcoreapp3.1\IVICosmetics.Web.runtimeconfig.dev.json
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\bin\Debug\netcoreapp3.1\IVICosmetics.Web.dll
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\bin\Debug\netcoreapp3.1\IVICosmetics.Web.pdb
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\bin\Debug\netcoreapp3.1\IVICosmetics.Web.Views.dll
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\bin\Debug\netcoreapp3.1\IVICosmetics.Web.Views.pdb
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\IVICosmetics.Web.csprojAssemblyReference.cache
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\IVICosmetics.Web.AssemblyInfoInputs.cache
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\IVICosmetics.Web.AssemblyInfo.cs
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\IVICosmetics.Web.csproj.CoreCompileInputs.cache
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\IVICosmetics.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\IVICosmetics.Web.RazorAssemblyInfo.cache
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\IVICosmetics.Web.RazorAssemblyInfo.cs
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\staticwebassets\IVICosmetics.Web.StaticWebAssets.Manifest.cache
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\staticwebassets\IVICosmetics.Web.StaticWebAssets.xml
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\scopedcss\bundle\IVICosmetics.Web.styles.css
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\IVICosmetics.Web.TagHelpers.input.cache
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\IVICosmetics.Web.TagHelpers.output.cache
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\IVICosmetics.Web.RazorCoreGenerate.cache
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\IVICosmetics.Web.RazorTargetAssemblyInfo.cache
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\IVICosmetics.Web.RazorTargetAssemblyInfo.cs
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\IVICosmetics.Web.Views.pdb
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\IVICosmetics.Web.dll
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\IVICosmetics.Web.pdb
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\IVICosmetics.Web.genruntimeconfig.cache
+C:\Users\Denis\Documents\GitHub\sp2020-cp07-cos\ivicosmetics-BackEnd\IVICosmetics.Web\obj\Debug\netcoreapp3.1\IVICosmetics.Web.csproj.CopyComplete

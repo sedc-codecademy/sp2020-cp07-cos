@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Danica\\.nuget\\packages\\": {}
+    "C:\\Users\\Denis\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DANICA\\SEAVUS\\Ivi Cosmetics\\sp2020-cp07-cos\\ivicosmetics-BackEnd\\IVICosmetics.Web\\IVICosmetics.Web.csproj",
+      "projectUniqueName": "C:\\Users\\Denis\\Documents\\GitHub\\sp2020-cp07-cos\\ivicosmetics-BackEnd\\IVICosmetics.Web\\IVICosmetics.Web.csproj",
       "projectName": "IVICosmetics.Web",
-      "projectPath": "D:\\DANICA\\SEAVUS\\Ivi Cosmetics\\sp2020-cp07-cos\\ivicosmetics-BackEnd\\IVICosmetics.Web\\IVICosmetics.Web.csproj",
-      "packagesPath": "C:\\Users\\Danica\\.nuget\\packages\\",
-      "outputPath": "D:\\DANICA\\SEAVUS\\Ivi Cosmetics\\sp2020-cp07-cos\\ivicosmetics-BackEnd\\IVICosmetics.Web\\obj\\",
+      "projectPath": "C:\\Users\\Denis\\Documents\\GitHub\\sp2020-cp07-cos\\ivicosmetics-BackEnd\\IVICosmetics.Web\\IVICosmetics.Web.csproj",
+      "packagesPath": "C:\\Users\\Denis\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Denis\\Documents\\GitHub\\sp2020-cp07-cos\\ivicosmetics-BackEnd\\IVICosmetics.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Danica\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Denis\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -32,6 +32,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -43,6 +44,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -61,7 +63,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "6qmPzJ0PL/Tr4MpMJ+SHQnR+ptf4zYyCK+QGlIyTB6mUBOFeoMkE2rzFBkyAhnCa9s/WanQh8rBkJ50VDSfHUQ==",
+  "dgSpecHash": "GVN1V18IyXVC7McOCdgO9Rxj2z0zS5jm+3LGDD4zLbALgnzxSoBYAfIIFeSdCtNc6rv9EC9bqhMBSXcqI2idRg==",
   "success": true,
-  "projectFilePath": "D:\\DANICA\\SEAVUS\\Ivi Cosmetics\\sp2020-cp07-cos\\ivicosmetics-BackEnd\\SEDC.IVICosmetics.DataAccess\\SEDC.IVICosmetics.DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\Denis\\Documents\\GitHub\\sp2020-cp07-cos\\ivicosmetics-BackEnd\\SEDC.IVICosmetics.DataAccess\\SEDC.IVICosmetics.DataAccess.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Danica\\.nuget\\packages\\microsoft.netcore.app\\2.1.0\\microsoft.netcore.app.2.1.0.nupkg.sha512",
-    "C:\\Users\\Danica\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.1.0\\microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",
-    "C:\\Users\\Danica\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\2.1.0\\microsoft.netcore.dotnethostpolicy.2.1.0.nupkg.sha512",
-    "C:\\Users\\Danica\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.1.0\\microsoft.netcore.dotnethostresolver.2.1.0.nupkg.sha512",
-    "C:\\Users\\Danica\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
-    "C:\\Users\\Danica\\.nuget\\packages\\microsoft.netcore.targets\\2.1.0\\microsoft.netcore.targets.2.1.0.nupkg.sha512",
-    "C:\\Users\\Danica\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\Denis\\.nuget\\packages\\microsoft.netcore.app\\2.1.0\\microsoft.netcore.app.2.1.0.nupkg.sha512",
+    "C:\\Users\\Denis\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.1.0\\microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",
+    "C:\\Users\\Denis\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\2.1.0\\microsoft.netcore.dotnethostpolicy.2.1.0.nupkg.sha512",
+    "C:\\Users\\Denis\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.1.0\\microsoft.netcore.dotnethostresolver.2.1.0.nupkg.sha512",
+    "C:\\Users\\Denis\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
+    "C:\\Users\\Denis\\.nuget\\packages\\microsoft.netcore.targets\\2.1.0\\microsoft.netcore.targets.2.1.0.nupkg.sha512",
+    "C:\\Users\\Denis\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }
