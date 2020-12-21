@@ -1,2 +1,2 @@
-# sp2020-cp07-cos
-Student projects 2020 - Client project 07 - Izotov Consulting [Cosmetics Website]
+# IviCosmetics-FE
+Single page website made for Macedonian company called "Ivi Cosmetics". Made by team of students at SEDC. 

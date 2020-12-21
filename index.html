@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ivi Cosmetics</title>
 	<script src="https://kit.fontawesome.com/078356818b.js" crossorigin="anonymous"></script>
-	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;600&display=swap"
-	      rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet"
 	      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 	      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
@@ -19,10 +19,10 @@
 
 <body>
 <!--Testing purposes-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light">
 
 	<!--  Show this only on mobile to medium screens  -->
-	  <a class="navbar-brand d-lg-none" href="#"><img class="logo" src="img/ivi-logo.png" alt=""></a>
+	  <a class="navbar-brand d-lg-none" ><img class="logo" src="img/ivi-logo.png" alt=""></a>
 	
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
@@ -33,7 +33,7 @@
 	
 		<ul class="navbar-nav">
 		  <li class="nav-item">
-			<a class="nav-link active" id="home" href="#">Home <span class="sr-only">(current)</span></a>
+			<a class="nav-link active" onClick="window.location.reload();" id="home" href="#">Home <span class="sr-only">(current)</span></a>
 		  </li>
 		  <li class="nav-item">
 			<a class="nav-link" id="about" href="#">About</a>
@@ -45,13 +45,13 @@
 		
 		
 	<!--   Show this only lg screens and up   -->
-		<a class="navbar-brand d-none d-lg-block" href="#"><img class="logo" src="img/ivi-logo.png" alt=""></a>
+		<a class="navbar-brand d-none d-lg-block"  onClick="window.location.reload();" href="#"><img class="logo" id="navLogo" src="img/ivi-logo.png" alt=""></a>
 		
 		
 		
 		<ul class="navbar-nav">
 		  <li class="nav-item">
-			<a class="nav-link" href="#">Blog</a>
+			<a class="nav-link" id="blog-nav" href="#">Blog</a>
 		  </li>
 		  <li class="nav-item">
 			<a class="nav-link" href="#" id="contact">Contact</a>
@@ -66,7 +66,7 @@
 				  </li>
 				  <li class="nav-item">
 				  
-					<a style="padding-top: 0.8em!important; padding-right: 0.5em!important; padding-left: 0.5em!important;" class="nav-link" href="#"><p><img class="extra-icon" src="img/shoppingcart.svg" alt=""><sub style="bottom: -0.75em; left: 0.1em;">0</sub></p></a>
+					<a id="open-cart" style="padding-top: 0.8em!important; padding-right: 0.5em!important; padding-left: 0.5em!important;" class="nav-link" href="#"><p><img class="extra-icon" src="img/shoppingcart.svg" alt=""><sub id="cart-products"  style="bottom: -0.75em; left: 0.1em;"></sub></p></a>
 		
 				</ul>
 			</div>
@@ -78,12 +78,191 @@
 
 <div id="output">
 
+	
+	<div class="container-fluid">
+		<div class="row">
+		  <div class="col-12 hero">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			  <ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			  </ol>
+			  <div class="carousel-inner">
+				<div class="carousel-item active">
+				  <img class="d-block w-100 img-fluid" src="./img/home_hero.jpg" alt="First slide">
+				  <div class="carousel-caption d-none d-md-block hero-caption">
+					<h1 class="hero-title">Wax <br>depilator</h1>
+					<button type="button" class=" storeClass btn btn-outline hero-btn">Go to store</button>
+				  </div>
+				</div>
+				<div class="carousel-item">
+				  <img class="d-block w-100 img-fluid" src="./img/home_hero2.jpg" alt="Second slide">
+				  <div class="carousel-caption d-none d-md-block hero-caption">
+					<h1 class="hero-title" style="color: white;">Sugar <br>wax</h1>
+					<button type="button" class="storeClass btn btn-outline hero-btn" >Go to store</button>
+				  </div>
+				</div>
+				<div class=" carousel-item">
+				  <img class="d-block w-100 img-fluid" src="./img/home_hero3.jpg" alt="Third slide">
+				  <div class="carousel-caption d-none d-md-block hero-caption">
+					<h1 class="hero-title">Natural Bee <br>Wax</h1>
+					<button type="button" class="storeClass btn btn-outline hero-btn">Go to store</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	
+		<div class="row">
+		  <div class="col-12 sale-baner">
+			<h4>Get 30% off with your first order!</h4>
+		  </div>
+		</div>
+	  </div>
+	  <div class="container">
+		<h3 class="hp-products-title">OUR PRODUCTS</h3>
+		<div class="row hp-product-row">
+		  <div class="col-md-6 hp-product-img">
+			<img src="./img/product1.jpg" class="img-fluid" alt="">
+		  </div>
+		  <div class="col-md-6 hp-product-description">
+			<h4 class="hp-product-names1">WAX DEPILATOR GREEN</h4>
+			<p class="hp-product-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit lorem leo, sit enim sed in facilisi proin a.
+			  Convallis id at magna orci congue amet. Aliquet consequat sed dictum sed elit lorem amet.
+			  Elementum lorem arcu imperdiet volutpat nisl, suspendisse facilisis ut massa.</p>
+			<button type="button" class="storeClass btn btn-outline hero-btn" style="color: #333;">Go to store</button>
+		  </div>
+		</div>
+		<div class="row hp-product-row">
+	
+		  <div class="col-md-6 hp-product-description2">
+			<h4 class="hp-product-names2">WAX DEPILATOR BLUE</h4>
+			<p class="hp-product-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit lorem leo, sit enim sed in facilisi proin a.
+			  Convallis id at magna orci congue amet. Aliquet consequat sed dictum sed elit lorem amet.
+			  Elementum lorem arcu imperdiet volutpat nisl, suspendisse facilisis ut massa.</p>
+			<button type="button" class="storeClass btn btn-outline hero-btn hp-product-btn2" style="color: #333;">Go to store</button>
+	
+		  </div>
+		  <div class="col-md-6 hp-product-img2">
+			<img src="./img/product2.jpg" class="img-fluid" alt="">
+		  </div>
+		</div>
+		<div class="row hp-product-row">
+		  <div class="col-md-6 hp-product-img">
+			<img src="./img/product3.jpg" class="img-fluid" alt="">
+		  </div>
+		  <div class="col-md-6 hp-product-description">
+			<h4 class="hp-product-names1">WAX DEPILATOR YELLOW</h4>
+			<p class="hp-product-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit lorem leo, sit enim sed in facilisi proin a.
+			  Convallis id at magna orci congue amet. Aliquet consequat sed dictum sed elit lorem amet.
+			  Elementum lorem arcu imperdiet volutpat nisl, suspendisse facilisis ut massa.</p>
+			<button type="button" class="storeClass btn btn-outline hero-btn" style="color: #333;">Go to store</button>
+		  </div>
+		</div>
+	  </div>
+	  <div class="container-fluid">
+		<div class="row">
+		  <div class="col-12">
+			<h3 class="hp-partners-title">OUR PARTNERS</h3>
+		  </div>
+		</div>
+		<div class="row hp-rectangle-row">
+		  <div class="col-12 hp-partners-logos">
+	
+			<ul class="hp-partners">
+			  <li class="hp-partners-list">
+				<figure class="hp-partners-logo">
+				  <i class="fab fa-app-store"></i>
+				</figure>
+				<figure class="hp-partners-logo">
+				  <i class="fab fa-app-store"></i>
+				</figure>
+				<figure class="hp-partners-logo">
+				  <i class="fab fa-app-store"></i>
+				</figure>
+				<figure class="hp-partners-logo">
+				  <i class="fab fa-app-store"></i>
+				</figure>
+				<figure class="hp-partners-logo">
+				  <i class="fab fa-app-store"></i>
+				</figure>
+				<figure class="hp-partners-logo">
+				  <i class="fab fa-app-store"></i>
+				</figure>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	  <div class="container">
+		<div class="row hp-ourstory-row">
+		  <div class="col-md-6">
+			<img src="./img/hp_story.png" class="img-fluid" alt="">
+		  </div>
+		  <div class="col-md-6 hp-ourstory-text">
+			<h3 class="hp-ourstory-title">See our story</h3>
+			<p class="hp-ourstory-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit lorem leo, sit enim sed in facilisi proin a. Convallis id at magna orci congue amet. Aliquet consequat sed
+			  dictum sed elit lorem amet. Elementum lorem arcu imperdiet volutpat nisl, suspendisse facilisis ut massa.</p>
+			<div class="btn-read">
+			  <button type="button" id="seeOurStory" class="btn btn-outline hero-btn" style="color: #333;">Read more</button>
+			</div>
+	
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-12 proba">
+			<h3 class="hp-blog-title">BLOG</h3>
+		  </div>
+		</div>
+	  </div>
+	  <div class="container">
+		<div class="row hp-blog-row">
+		  <div class="col-md-4 hp-blog-img">
+	
+			<div class="smaller-div">
+			  <div class="text-box">
+				<p>03.04.2020.</p>
+				<h5 class="hp-blognews-title">NEWS TITLE</h5>
+				<p class="hp-blog-p">Author: Bob Bobsky</p>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-4 hp-blog-img">
+	
+			<div class="smaller-div">
+			  <div class="text-box">
+				<p>03.04.2020.</p>
+				<h5 class="hp-blognews-title">NEWS TITLE</h5>
+				<p class="hp-blog-p">Author: Bob Bobsky</p>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-4 hp-blog-img">
+			<div class="smaller-div">
+			  <div class="text-box">
+				<p>03.04.2020.</p>
+				<h5 class="hp-blognews-title">NEWS TITLE</h5>
+				<p class="hp-blog-p">Author: Bob Bobsky</p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-md-12 hp-news-btn">
+			<button type="button" class="btn btn-outline hero-btn" style="color: #333;" id="seeAllPosts">See all posts</button>
+		  </div>
+		</div>
+	  </div>
+	
+	
 </div>
 
 
 	
 <!-- The Footer Starts Here -->
-<div id="footer">
+<div id="footer" class="bigger-footer">
 	<footer>
 		<!-- This Div is for the upper part of the Footer which has all the content in it -->
 		<div class="upper_footer">
@@ -94,35 +273,36 @@
 
 
 						<div class="row">
-							<div class="column">
-								<h2><a href=""> Contact </a></h2>
-								<p><a href="#">Tel +38922444528 </a></p>
-								<p><a href="#">Mob +38975869749 </a></p>
-								<p id="address_footer"><a href="#">Bul Jane Sandanski 105 <br>
+							<div class="column footer-column">
+								<h2> Contact</h2>
+								<p class="footer-item"><a href="#">Tel +38922444528 </a></p>
+								<p class="footer-item"><a href="#">Mob +38975869749 </a></p>
+								<p class="footer-item" id="address_footer"><a href="#">Bul Jane Sandanski 105 <br>
 									1000 Skopje Macedonia </a></p>
 							</div>
-							<div class="column">
-								<h2><a href="#">Help </a></h2>
-								<p><a href="#">FAQ's </a></p>
-								<p><a href="#">Pricing Plans </a></p>
-								<p><a href="#">Track </a></p>
-								<p><a href="#">Your Order </a></p>
-								<p><a href="#">Returns </a></p>
+							
+							<div class="column footer-column">
+								<h2 id="aboutFooter">About Ivi </h2>
+								<p class="footer-item"><a href="#">Our Story </a></p>
+								<p class="footer-item" id="store-footer">Store</p>
+								<p class="footer-item"><a href="#" id="contact-footer">Contact Us </a></p>
 							</div>
-							<div class="column">
-								<h2 id="aboutFooter">ABOUT US </h2>
-								<p><a href="#">Our Story </a></p>
-								<p><a href="">Job Opportunities </a></p>
-								<p id="store-footer">Store</p>
-								<p><a href="#" id="contact-footer">Contact Us </a></p>
 
+							<div class="column footer-column">
+								<h2>Visual setting </h2>
+								<p class="footer-item"><i>Web design by: </i></p>
+								<p class="footer-item"><a href="#">Danica Tomic </a></p>
+								<p class="footer-item"><i>Photography by:</i> </p>
+								<p class="footer-item"><a href="#">Monika Sazdova </a></p>
+								
 							</div>
-							<div class="column">
-								<h2 id="customer-services"><a href="#">Customer Services </a></h2>
-								<p><a href="#">My Account </a></p>
-								<p><a href="#">Terms of Use </a></p>
-								<p><a href="#">Deliveries & Returns </a></p>
-								<p><a href="#">Gift Card </a></p>
+							<div class="column footer-column">
+								<h2 id="customer-services">Developed by </h2>
+								<p class="footer-item"><a href="https://github.com/DanicaTo" target="_blank">Danica Tomic </a></p>
+								<p class="footer-item"><a href="https://github.com/denis615" target="_blank">Denis Sakipi </a></p>
+								<p class="footer-item"><a href="https://github.com/SashoDimitrovski" target="_blank">Sasho Dimitrovski </a></p>
+								<p class="footer-item"><a href="#">Marija Pandevska </a></p>
+								
 							</div>
 						</div>
 					</div>
@@ -150,10 +330,12 @@
 	        crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 	        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-	        crossorigin="anonymous"></script>
+			crossorigin="anonymous"></script>
+
 	<script src="JavaScript/script.js"></script>
 	<script src="Assets/js/jquery.hislide.js"></script>
-
+	
+	
 </body>
 
 </html>
